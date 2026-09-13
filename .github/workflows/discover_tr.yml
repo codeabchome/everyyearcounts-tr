@@ -1,0 +1,51 @@
+# Elle tetiklenir. Aday göstergeleri çeker, Türkiye + hareket eleğinden geçirir,
+# topics_tr.json ve discover_report.md üretir ve repoya commit eder.
+# Süre: ~10-20 dk. Workflow permissions: Read and write olmalı.
+name: discover-tr
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Test için aday sayısı (0 = hepsi)"
+        default: "0"
+      min_swaps:
+        description: "Hareket eleği alt sınırı"
+        default: "12"
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/cache@v4
+        with:
+          path: cache_discover
+          key: discover-${{ github.run_id }}
+          restore-keys: discover-
+
+      - name: Kesif
+        env:
+          EYC_LIMIT: ${{ github.event.inputs.limit }}
+          EYC_MIN_SWAPS: ${{ github.event.inputs.min_swaps }}
+        run: python discover_tr.py
+
+      - name: Ozet
+        run: head -60 discover_report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit
+        run: |
+          git config user.name "eyc-bot"
+          git config user.email "eyc-bot@users.noreply.github.com"
+          git add topics_tr.json discover_report.md
+          git diff --cached --quiet || git commit -m "discover_tr: konu listesi guncellendi"
+          git push
