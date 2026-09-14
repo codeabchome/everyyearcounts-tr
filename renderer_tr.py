@@ -137,8 +137,18 @@ def sabitler(cfg):
     x = logo(d, 70, 92)
     d.text((x, 92), "TÜRKİYE", font=fnt("ExtraBold", 34), fill=INK)
     d.text((x, 130), "KAÇINCI?", font=fnt("ExtraBold", 34), fill=RED)
-    d.text((70, 262), cfg["baslik1"], font=fnt("ExtraBold", 88), fill=INK)
-    d.text((70, 358), cfg["baslik2"], font=fnt("ExtraBold", 88), fill=RED)
+    # Başlık iki satır. Uzun başlıkta punto küçülür — yoksa sağdan taşıp kesiliyor
+    # ("SİVASLILAR EN ÇOK NEREDE YAŞIYOR?" gibi). İki satır aynı puntoda kalsın
+    # diye küçük olan ikisine birden uygulanır.
+    genislik = W - 140
+    punto = 88
+    while punto > 46 and any(
+            d.textlength(cfg[k], font=fnt("ExtraBold", punto)) > genislik
+            for k in ("baslik1", "baslik2")):
+        punto -= 4
+    ust = 262 + (88 - punto)          # küçülünce blok dikeyde ortalansın
+    d.text((70, ust), cfg["baslik1"], font=fnt("ExtraBold", punto), fill=INK)
+    d.text((70, ust + punto + 8), cfg["baslik2"], font=fnt("ExtraBold", punto), fill=RED)
     d.line([70, 500, W-70, 500], fill=LINE, width=2)
     d.text((70, 526), cfg["altbaslik"], font=fnt("Bold", 32), fill=MUT)
     d.line([70, H-152, W-70, H-152], fill=LINE, width=2)

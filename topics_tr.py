@@ -16,6 +16,8 @@ Yeni gösterge eklemek: veri_il/<slug>.json üret, aşağıdaki listeye satır e
 import json
 import os
 
+from data_memleket import ilgi
+
 BURADA = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -25,7 +27,6 @@ IL_KONULARI = [
     # ================= KADEME 1 — en çok merak edilenler =================
     ("nufus",             "EN KALABALIK",         "10 İL",                  False, "nufus",   1),
     ("gsyh_kisi_basi",    "KİŞİ BAŞINA GELİRİ",   "EN YÜKSEK 10 İL",        False, "ekonomi", 1),
-    ("memleket_istanbul", "İSTANBUL'DA EN ÇOK",   "HANGİ İLDEN İNSAN VAR?", False, "memleket",1),
     ("akraba_evlilik",    "AKRABA EVLİLİĞİ",      "EN YÜKSEK 10 İL",        False, "aile",    1),
     ("goc_net",           "EN ÇOK NÜFUS",         "KAYBEDEN 10 İL",         True,  "goc",     1),
     ("otomobil_1000",     "1000 KİŞİYE DÜŞEN",    "EN ÇOK OTOMOBİL",        False, "yasam",   1),
@@ -34,7 +35,6 @@ IL_KONULARI = [
     ("gsyh_kisi_basi",    "KİŞİ BAŞINA GELİRİ",   "EN DÜŞÜK 10 İL",         True,  "ekonomi", 1),
     ("hekim_10bin",       "DOKTORU EN AZ",        "OLAN 10 İL",             True,  "saglik",  1),
     ("dogurganlik",       "EN ÇOK ÇOCUK",         "YAPILAN 10 İL",          False, "aile",    1),
-    ("memleket_ankara",   "ANKARA'DA EN ÇOK",     "HANGİ İLDEN İNSAN VAR?", False, "memleket",1),
     ("goc_egitim",        "EĞİTİM İÇİN",          "EN ÇOK GÖÇ ALAN 10 İL",  False, "goc",     1),
     ("trafik_kaza_10bin", "TRAFİK KAZASI",        "EN ÇOK OLAN 10 İL",      False, "yasam",   1),
     ("nufus_yogunlugu",   "EN SIKIŞIK",           "10 İL",                  False, "nufus",   1),
@@ -43,7 +43,6 @@ IL_KONULARI = [
     ("yabanci_nufus",     "EN ÇOK YABANCI",       "YAŞAYAN 10 İL",          False, "nufus",   1),
     ("goc_alan",          "EN ÇOK GÖÇ ALAN",      "10 İL",                  False, "goc",     1),
     ("bebek_olum",        "BEBEK ÖLÜM ORANI",     "EN YÜKSEK 10 İL",        False, "saglik",  1),
-    ("memleket_izmir",    "İZMİR'DE EN ÇOK",      "HANGİ İLDEN İNSAN VAR?", False, "memleket",1),
     ("dogurganlik",       "EN AZ ÇOCUK",          "YAPILAN 10 İL",          True,  "aile",    1),
     ("yapi_ruhsat",       "EN ÇOK KONUT",         "İZNİ VERİLEN 10 İL",     False, "yasam",   1),
     ("nufus",             "NÜFUSU EN AZ",         "10 İL",                  True,  "nufus",   1),
@@ -54,33 +53,28 @@ IL_KONULARI = [
     ("akraba_evlilik",    "AKRABA EVLİLİĞİ",      "EN DÜŞÜK 10 İL",         True,  "aile",    2),
     ("yasli_orani",       "NÜFUSU EN YAŞLI",      "10 İL",                  False, "nufus",   2),
     ("hekim_10bin",       "DOKTORU EN ÇOK",       "OLAN 10 İL",             False, "saglik",  2),
-    ("memleket_bursa",    "BURSA'DA EN ÇOK",      "HANGİ İLDEN İNSAN VAR?", False, "memleket",2),
     ("goc_is",            "İŞ İÇİN",              "EN ÇOK GÖÇ ALAN 10 İL",  False, "goc",     2),
     ("gsyh_sanayi_payi",  "EKONOMİSİ EN ÇOK",     "SANAYİYE DAYALI 10 İL",  False, "ekonomi", 2),
     ("evlenme_hizi",      "EN ÇOK EVLENİLEN",     "10 İL",                  False, "aile",    2),
     ("cocuk_orani",       "NÜFUSU EN GENÇ",       "10 İL",                  False, "nufus",   2),
     ("traktor",           "EN ÇOK TRAKTÖR",       "OLAN 10 İL",             False, "yasam",   2),
     ("yatak_10bin",       "HASTANE YATAĞI",       "EN ÇOK OLAN 10 İL",      False, "saglik",  2),
-    ("memleket_antalya",  "ANTALYA'DA EN ÇOK",    "HANGİ İLDEN İNSAN VAR?", False, "memleket",2),
     ("goc_net_hizi",      "NET GÖÇ HIZI",         "EN YÜKSEK 10 İL",        False, "goc",     2),
     ("hanehalki",         "EN KALABALIK",         "AİLELERİN OLDUĞU 10 İL", False, "aile",    2),
     ("ortanca_yas",       "EN GENÇ",              "10 İL",                  True,  "nufus",   2),
     ("motosiklet",        "EN ÇOK MOTOSİKLET",    "OLAN 10 İL",             False, "yasam",   2),
     ("bosanma_hizi",      "BOŞANMA ORANI",        "EN DÜŞÜK 10 İL",         True,  "aile",    2),
     ("eczaci_10bin",      "ECZACISI EN ÇOK",      "OLAN 10 İL",             False, "saglik",  2),
-    ("memleket_kocaeli",  "KOCAELİ'DE EN ÇOK",    "HANGİ İLDEN İNSAN VAR?", False, "memleket",2),
     ("goc_konut",         "DAHA İYİ KONUT İÇİN",  "EN ÇOK GÖÇ ALAN 10 İL",  False, "goc",     2),
     ("nufus_artis_hizi",  "NÜFUSU EN HIZLI",      "BÜYÜYEN 10 İL",          False, "nufus",   2),
     ("ilk_evlenme_erkek", "ERKEKLERİN EN GEÇ",    "EVLENDİĞİ 10 İL",        False, "aile",    2),
     ("yapi_ruhsat_10bin", "NÜFUSA GÖRE EN ÇOK",   "KONUT YAPILAN 10 İL",    False, "yasam",   2),
     ("bebek_olum",        "BEBEK ÖLÜM ORANI",     "EN DÜŞÜK 10 İL",         True,  "saglik",  2),
-    ("memleket_adana",    "ADANA'DA EN ÇOK",      "HANGİ İLDEN İNSAN VAR?", False, "memleket",2),
     ("goc_evlilik",       "EVLİLİK NEDENİYLE",    "EN ÇOK GÖÇ ALAN 10 İL",  False, "goc",     2),
     ("yasli_bagimlilik",  "YAŞLI BAĞIMLILIK",     "ORANI EN YÜKSEK 10 İL",  False, "nufus",   2),
     ("dogum_hizi",        "DOĞUM ORANI",          "EN YÜKSEK 10 İL",        False, "aile",    2),
     ("kamyon",            "EN ÇOK KAMYON",        "OLAN 10 İL",             False, "yasam",   2),
     ("hemsire_10bin",     "HEMŞİRESİ EN ÇOK",     "OLAN 10 İL",             False, "saglik",  2),
-    ("memleket_mersin",   "MERSİN'DE EN ÇOK",     "HANGİ İLDEN İNSAN VAR?", False, "memleket",2),
     ("goc_tayin",         "TAYİNLE EN ÇOK",       "GÖÇ ALAN 10 İL",         False, "goc",     2),
     ("nufus_yogunlugu",   "EN TENHA",             "10 İL",                  True,  "nufus",   2),
     ("ilk_anne_yasi",     "İLK ÇOCUĞUNU EN GEÇ",  "DOĞURAN 10 İL",          False, "aile",    2),
@@ -123,7 +117,77 @@ IL_KONULARI = [
     ("trafik_kaza_10bin", "TRAFİK KAZASI",        "EN AZ OLAN 10 İL",       True,  "yasam",   3),
 ]
 
-TEMA_SIRASI = ["nufus", "ekonomi", "aile", "goc", "yasam", "saglik", "memleket"]
+TEMA_SIRASI = ["nufus", "memleket", "ekonomi", "nereli", "aile", "goc",
+               "yasam", "saglik"]
+
+
+# --------------------------------------------------------------- memleket katmanı
+# veri_il/memleket_<il>.json  ve  veri_il/nereli_<il>.json  data_memleket.py
+# tarafından 81'er tane üretiliyor. Elle satır yazmak yerine burada otomatik
+# sıraya sokuluyor:
+#   memleket_X ("X'te yaşayanlar nereli")  -> X ne kadar kalabalıksa o kadar önde
+#   nereli_X   ("X'liler nerede yaşıyor")  -> X'in diasporası ne kadar büyükse o kadar önde
+
+def tr_buyuk(s):
+    """Türkçe büyük harf: i -> İ, ı -> I (Python'un upper()'ı bunu bilmiyor)."""
+    return s.replace("i", "İ").replace("ı", "I").upper()
+
+
+def _sira(deger_fn, kaynak):
+    d = {k: deger_fn(v) for k, v in kaynak.items()}
+    return {k: i for i, k in enumerate(sorted(d, key=lambda k: -d[k]))}
+
+
+def memleket_konulari():
+    ozet_yolu = os.path.join(BURADA, "veri_il", "_memleket_ozet.json")
+    nufus_yolu = os.path.join(BURADA, "veri_il", "nufus.json")
+    if not (os.path.exists(ozet_yolu) and os.path.exists(nufus_yolu)):
+        return []
+    ozet = json.load(open(ozet_yolu, encoding="utf-8"))
+    nufus = json.load(open(nufus_yolu, encoding="utf-8"))["iller"]
+
+    def son(a):
+        return next((v for v in reversed(a) if v is not None), 0)
+
+    pop_sira = _sira(son, nufus)                                  # kalabalıklık
+    dia_sira = _sira(lambda v: v["disari"], ozet)                 # diaspora büyüklüğü
+    oran_sira = _sira(lambda v: v["oran"], ozet)                  # diaspora oranı
+
+    def kademe(r, ilk, orta):
+        return 1 if r < ilk else (2 if r < orta else 3)
+
+    out = []
+    for yol in sorted(os.listdir(os.path.join(BURADA, "veri_il"))):
+        if not yol.endswith(".json") or yol.startswith("_"):
+            continue
+        slug = yol[:-5]
+        veri = json.load(open(os.path.join(BURADA, "veri_il", yol), encoding="utf-8"))
+        if slug.startswith("memleket_"):
+            il = veri["ad"].split(" Nüfusunun")[0]
+            r = pop_sira.get(il, 99)
+            out.append((slug, tr_buyuk(tr_kesme(il)) + " EN ÇOK",
+                        "HANGİ İLDEN İNSAN VAR?",
+                        False, "memleket", kademe(r, 10, 32), r))
+        elif slug.startswith("nereli_"):
+            il = veri["not"].split("'e kayıtlı")[0].split("nüfusa ")[-1]
+            ad = ilgi(il)
+            # hem mutlak diaspora hem oran önemli: ikisinin ortalaması
+            r = (dia_sira.get(il, 99) + oran_sira.get(il, 99)) / 2
+            out.append((slug, tr_buyuk(ad), "EN ÇOK NEREDE YAŞIYOR?",
+                        False, "nereli", kademe(r, 12, 40), r))
+    # kademe içinde de sıralama önem sırasına göre olsun (alfabetik değil)
+    out.sort(key=lambda x: (x[5], x[6]))
+    return out
+
+
+def tr_kesme(il):
+    """'İstanbul' -> \"İSTANBUL'DA\" ; ünlü/ünsüz uyumuna göre -da/-de/-ta/-te."""
+    sesli = "aeıioöuü"
+    ad = il.lower().replace("İ", "i").replace("I", "ı")
+    son_sesli = next((h for h in reversed(ad) if h in sesli), "a")
+    ek = "d" if ad[-1] not in "fstkçşhp" else "t"
+    ek += "a" if son_sesli in "aıou" else "e"
+    return f"{il}'{ek}"
 
 
 def _serpistir(konular):
@@ -142,7 +206,7 @@ def _serpistir(konular):
 def il_konulari():
     kademeler = {}
     gorulen = set()
-    for satir in IL_KONULARI:
+    for satir in list(IL_KONULARI) + [m[:6] for m in memleket_konulari()]:
         dosya, b1, b2, ters, tema, kademe = satir
         anahtar = (dosya, ters)
         if anahtar in gorulen:      # aynı gösterge+yön iki kez yayınlanmasın
