@@ -1,0 +1,247 @@
+# discover_tr raporu
+
+**Toplam konu: 824**  (aday gösterge: 173, çekilen: 97, başarısız: 76)
+
+## Kapsam başına konu
+
+- world: 3
+- europe: 55
+- eu_plus_tr: 67
+- middle_east: 87
+- neighbors: 98
+- balkans: 64
+- black_sea: 96
+- mediterranean: 91
+- islamic: 66
+- turkic_caucasus_ca: 82
+- g20: 57
+- emerging: 58
+
+## Eleme sebepleri
+
+- Türkiye grafikte yok: 643
+- yeterli yıl yok: 135
+- kapsamda verisi olan ülke az: 31
+- sıralama durgun: 23
+
+## Başarısız kaynaklar (düzelt veya sil)
+
+- wb MS.MIL.XPND.ZS: Türkiye verisi yok
+- wb SM.POP.REFG: boş cevap
+- wb EG.ELC.PROD.KH: boş cevap
+- owid wheat-production: beklenmeyen başlık: ['entity', 'code', 'year', 'wheat__00000015__production__005510__tonnes']
+- owid barley-production: beklenmeyen başlık: ['entity', 'code', 'year', 'barley__00000044__production__005510__tonnes']
+- owid maize-production: beklenmeyen başlık: ['entity', 'code', 'year', 'maize__00000056__production__005510__tonnes']
+- owid rice-production: beklenmeyen başlık: ['entity', 'code', 'year', 'rice__00000027__production__005510__tonnes']
+- owid potato-production: beklenmeyen başlık: ['entity', 'code', 'year', 'potatoes__00000116__production__005510__tonnes']
+- owid tomato-production: beklenmeyen başlık: ['entity', 'code', 'year', 'tomatoes__00000388__production__005510__tonnes']
+- owid apple-production: beklenmeyen başlık: ['entity', 'code', 'year', 'apples__00000515__production__005510__tonnes']
+- owid grape-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid orange-production: beklenmeyen başlık: ['entity', 'code', 'year', 'oranges__00000490__production__005510__tonnes']
+- owid banana-production: beklenmeyen başlık: ['entity', 'code', 'year', 'bananas__00000486__production__005510__tonnes']
+- owid olive-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid tea-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid coffee-bean-production: beklenmeyen başlık: ['entity', 'code', 'year', 'coffee__green__00000656__production__005510__tonnes']
+- owid cocoa-bean-production: beklenmeyen başlık: ['entity', 'code', 'year', 'cocoa_beans__00000661__production__005510__tonnes']
+- owid sugar-cane-production: beklenmeyen başlık: ['entity', 'code', 'year', 'sugar_cane__00000156__production__005510__tonnes']
+- owid sugar-beet-production: beklenmeyen başlık: ['entity', 'code', 'year', 'sugar_beet__00000157__production__005510__tonnes']
+- owid sunflower-seed-production: beklenmeyen başlık: ['entity', 'code', 'year', 'sunflower_seed__00000267__production__005510__tonnes']
+- owid cotton-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid tobacco-production: beklenmeyen başlık: ['entity', 'code', 'year', 'tobacco__00000826__production__005510__tonnes']
+- owid lemon-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid cherry-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid apricot-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid fig-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid hazelnut-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid pistachio-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid walnut-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid almond-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid chickpea-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid lentil-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid watermelon-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid cucumber-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid pepper-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid onion-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid honey-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid egg-production-thousand-tonnes: beklenmeyen başlık: ['entity', 'code', 'year', 'eggs__00001783__production__005510__tonnes']
+- owid milk-production-tonnes: beklenmeyen başlık: ['entity', 'code', 'year', 'milk__00001780__production__005510__tonnes']
+- owid meat-production-tonnes: beklenmeyen başlık: ['entity', 'code', 'year', 'meat__total__00001765__production__005510__tonnes']
+- owid chicken-meat-production: beklenmeyen başlık: ['entity', 'code', 'year', 'meat__chicken__00001058__production__005510__tonnes']
+- owid beef-and-buffalo-meat-production-tonnes: beklenmeyen başlık: ['entity', 'code', 'year', 'meat__beef_and_buffalo__00001806__production__005510__tonnes']
+- owid sheep-and-goat-meat-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid number-of-cattle: HTTP 404 (slug/kod yanlış olabilir)
+- owid number-of-sheep: HTTP 404 (slug/kod yanlış olabilir)
+- owid number-of-goats: HTTP 404 (slug/kod yanlış olabilir)
+- owid number-of-chickens: HTTP 404 (slug/kod yanlış olabilir)
+- owid capture-fishery-production: beklenmeyen başlık: ['entity', 'code', 'year', 'er_fsh_capt_mt']
+- owid aquaculture-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid electricity-generation: beklenmeyen başlık: ['entity', 'code', 'year', 'total_generation__twh']
+- owid primary-energy-cons: beklenmeyen başlık: ['entity', 'code', 'year', 'total_energy_supply_twh']
+- owid solar-energy-consumption: beklenmeyen başlık: ['entity', 'code', 'year', 'solar_generation__twh']
+- owid wind-generation: beklenmeyen başlık: ['entity', 'code', 'year', 'wind_generation__twh']
+- owid hydropower-consumption: beklenmeyen başlık: ['entity', 'code', 'year', 'hydro_generation__twh']
+- owid geothermal-energy-generation: HTTP 404 (slug/kod yanlış olabilir)
+- owid coal-production-by-country: beklenmeyen başlık: ['entity', 'code', 'year', 'coal_production_twh']
+- owid oil-production-by-country: beklenmeyen başlık: ['entity', 'code', 'year', 'oil_production_twh']
+- owid gas-production-by-country: beklenmeyen başlık: ['entity', 'code', 'year', 'gas_production_twh']
+- owid coal-consumption-by-country-terawatt-hours: HTTP 404 (slug/kod yanlış olabilir)
+- owid oil-consumption-by-country: beklenmeyen başlık: ['entity', 'code', 'year', 'oil_consumption_twh']
+- owid gas-consumption-by-country: beklenmeyen başlık: ['entity', 'code', 'year', 'gas_consumption_twh']
+- owid steel-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid cement-production: HTTP 404 (slug/kod yanlış olabilir)
+- owid annual-co2-emissions-per-country: beklenmeyen başlık: ['entity', 'code', 'year', 'emissions_total']
+- owid military-expenditure-total: beklenmeyen başlık: ['entity', 'code', 'year', 'constant_usd', 'owid_region']
+- owid armed-forces-personnel: beklenmeyen başlık: ['entity', 'code', 'year', 'ms_mil_totl_p1', 'owid_region']
+- owid population: beklenmeyen başlık: ['entity', 'code', 'year', 'population_historical']
+- owid life-expectancy: beklenmeyen başlık: ['entity', 'code', 'year', 'life_expectancy_0']
+- owid human-development-index: beklenmeyen başlık: ['entity', 'code', 'year', 'hdi__sex_total', 'owid_region']
+- owid gdp-per-capita-maddison-project-database: beklenmeyen başlık: ['entity', 'code', 'year', 'gdp_per_capita', 'gdp_per_capita__annotations']
+- owid number-of-internet-users: beklenmeyen başlık: ['entity', 'code', 'year', 'it_net_user_zs_number']
+- owid mobile-cellular-subscriptions-per-100-people: beklenmeyen başlık: ['entity', 'code', 'year', 'it_cel_sets_p2']
+- owid international-tourist-trips: beklenmeyen başlık: ['entity', 'code', 'year', 'in_tour_arrivals_trips_total_overnight_vis_tourists', 'owid_region']
+- owid passenger-cars-per-1000-inhabitants: HTTP 404 (slug/kod yanlış olabilir)
+- owid olympic-medals: HTTP 404 (slug/kod yanlış olabilir)
+- owid number-of-scientific-publications: HTTP 404 (slug/kod yanlış olabilir)
+
+## İlk 40 konu (skor)
+
+- 2022.7 | AB Ülkeleri ile Türkiye'de Enflasyon | TR medyan sıra 1, 1960-2025
+- 1564.0 | Balkanlar'da Nüfus Artış Hızı: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2025
+- 1404.0 | AB Ülkeleri ile Türkiye'de Doğum Oranı | TR medyan sıra 1, 1960-2024
+- 1392.0 | Karadeniz Ülkelerinde Nüfus Artış Hızı | TR medyan sıra 1, 1961-2025
+- 1336.0 | AB Ülkeleri ile Türkiye'de Doğurganlık Hızı | TR medyan sıra 1, 1960-2024
+- 1276.0 | AB ve Türkiye'de En Düşük Kadınlarda Yaşam Süresi: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2024
+- 1200.0 | Avrupa'da Doğum Oranı: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2024
+- 1192.0 | İslam Ülkeleri Arasında Milli Gelir (GSYH): Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2025
+- 1175.0 | Akdeniz Ülkelerinde Enflasyon: Türkiye Kaçıncı? | TR medyan sıra 2, 1965-2025
+- 1171.1 | G20 Ülkeleri Arasında Enflasyon: Türkiye Kaçıncı? | TR medyan sıra 2, 1960-2025
+- 1044.5 | Avrupa'da En Düşük 1000 Kişiye Düşen Doktor: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2022
+- 1028.0 | Karadeniz Ülkelerinde Doğurganlık Hızı | TR medyan sıra 1, 1960-2024
+- 1005.1 | Avrupa'da Enflasyon: Türkiye Kaçıncı? | TR medyan sıra 3, 1960-2025
+-  996.4 | AB Ülkeleri ile Türkiye'de Nüfus Artış Hızı | TR medyan sıra 2, 1961-2025
+-  970.0 | Ortadoğu'da En Düşük Nüfus Artış Hızı: Türkiye Kaçıncı? | TR medyan sıra 2, 1961-2025
+-  965.2 | İslam Ülkeleri Arasında Enflasyon: Türkiye Kaçıncı? | TR medyan sıra 3, 1964-2025
+-  928.2 | AB ve Türkiye'de En Düşük Kişi Başı Karbon Emisyonu: Türkiye Kaçıncı? | TR medyan sıra 1, 1970-2024
+-  928.0 | AB ve Türkiye'de En Düşük Hektar Başına Tahıl Verimi: Türkiye Kaçıncı? | TR medyan sıra 3, 1961-2024
+-  858.9 | Gelişen Ekonomiler Arasında Enflasyon: Türkiye Kaçıncı? | TR medyan sıra 4, 1960-2025
+-  835.0 | İslam Ülkeleri Arasında Askeri Harcama: Türkiye Kaçıncı? | TR medyan sıra 2, 1960-2024
+-  828.0 | AB Ülkeleri ile Türkiye'de Çocuk Nüfus Oranı (0-14) | TR medyan sıra 1, 1960-2025
+-  826.6 | Avrupa'da En Düşük Hektar Başına Tahıl Verimi: Türkiye Kaçıncı? | TR medyan sıra 4, 1961-2024
+-  815.9 | Avrupa'da Nüfus Artış Hızı: Türkiye Kaçıncı? | TR medyan sıra 3, 1961-2025
+-  812.0 | Karadeniz Ülkelerinde Doğum Oranı | TR medyan sıra 1, 1960-2024
+-  802.7 | Avrupa'da Doğurganlık Hızı: Türkiye Kaçıncı? | TR medyan sıra 2, 1960-2024
+-  795.0 | İslam Ülkeleri Arasında Toplam Yatırım Harcaması: Türkiye Kaçıncı? | TR medyan sıra 2, 1960-2025
+-  787.5 | AB ve Türkiye'de En Düşük Ortalama Yaşam Süresi: Türkiye Kaçıncı? | TR medyan sıra 2, 1960-2024
+-  774.0 | Ortadoğu'da Yabancı Yatırım Girişi: Türkiye Kaçıncı? | TR medyan sıra 3, 1972-2024
+-  772.5 | AB Ülkeleri ile Türkiye'de Ekonomik Büyüme Hızı | TR medyan sıra 3, 1961-2025
+-  756.2 | AB ve Türkiye'de En Düşük 1000 Kişiye Düşen Doktor: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2022
+-  736.0 | Balkanlar'da Doğum Oranı: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2024
+-  729.6 | AB ve Türkiye'de En Düşük 1000 Kişiye Düşen Hastane Yatağı: Türkiye Kaçıncı? | TR medyan sıra 1, 1970-2023
+-  722.9 | Avrupa'da Gelir Eşitsizliği (Gini): Türkiye Kaçıncı? | TR medyan sıra 1, 1987-2023
+-  718.2 | AB Ülkeleri ile Türkiye'de Askeri Harcamanın Milli Gelire Oranı | TR medyan sıra 3, 1960-2024
+-  700.0 | G20'de En Düşük Hektar Başına Tahıl Verimi: Türkiye Kaçıncı? | TR medyan sıra 4, 1961-2023
+-  696.0 | AB Ülkeleri ile Türkiye'de 5 Yaş Altı Ölüm Hızı | TR medyan sıra 1, 1960-2024
+-  693.8 | İslam Ülkeleri Arasında Mal İthalatı: Türkiye Kaçıncı? | TR medyan sıra 3, 1960-2025
+-  682.5 | Akdeniz Ülkelerinde Tahıl Üretimi: Türkiye Kaçıncı? | TR medyan sıra 2, 1961-2023
+-  673.2 | Akdeniz Ülkelerinde Ekonomik Büyüme Hızı: Türkiye Kaçıncı? | TR medyan sıra 4, 1967-2025
+-  669.0 | G20 Ülkeleri Arasında Ekonomik Büyüme Hızı: Türkiye Kaçıncı? | TR medyan sıra 4, 1961-2025
+
+## Çekilen kaynaklar
+
+- wb NY.GDP.MKTP.CD (175 ülke) 
+- wb NY.GDP.PCAP.CD (175 ülke) 
+- wb NY.GDP.MKTP.PP.CD (174 ülke) 
+- wb NY.GDP.PCAP.PP.CD (174 ülke) 
+- wb NY.GDP.MKTP.KD.ZG (175 ülke) 
+- wb NE.EXP.GNFS.CD (169 ülke) 
+- wb NE.IMP.GNFS.CD (169 ülke) 
+- wb TX.VAL.MRCH.CD.WT (173 ülke) 
+- wb TM.VAL.MRCH.CD.WT (173 ülke) 
+- wb BX.KLT.DINV.CD.WD (174 ülke) 
+- wb BX.TRF.PWKR.CD.DT (170 ülke) 
+- wb FI.RES.TOTL.CD (166 ülke) 
+- wb NV.IND.MANF.CD (172 ülke) 
+- wb NV.AGR.TOTL.CD (174 ülke) 
+- wb NE.GDI.TOTL.CD (169 ülke) 
+- wb FP.CPI.TOTL.ZG (170 ülke) 
+- wb SL.UEM.TOTL.ZS (175 ülke) 
+- wb SL.TLF.TOTL.IN (175 ülke) 
+- wb CM.MKT.LCAP.CD (99 ülke) 
+- wb CM.MKT.LDOM.NO (102 ülke) 
+- wb FS.AST.PRVT.GD.ZS (172 ülke) 
+- wb GC.TAX.TOTL.GD.ZS (146 ülke) 
+- wb TX.VAL.TECH.CD (164 ülke) 
+- wb TX.VAL.AGRI.ZS.UN (172 ülke) 
+- wb TX.VAL.FUEL.ZS.UN (172 ülke) 
+- wb TX.VAL.MANF.ZS.UN (172 ülke) 
+- wb MS.MIL.XPND.CD (166 ülke) 
+- wb MS.MIL.XPND.GD.ZS (163 ülke) 
+- wb SP.POP.TOTL (176 ülke) 
+- wb SP.URB.TOTL (176 ülke) 
+- wb SP.RUR.TOTL (176 ülke) 
+- wb SP.URB.TOTL.IN.ZS (176 ülke) 
+- wb SP.POP.GROW (176 ülke) 
+- wb EN.POP.DNST (175 ülke) 
+- wb EN.URB.LCTY (153 ülke) 
+- wb SP.DYN.LE00.IN (176 ülke) 
+- wb SP.DYN.TFRT.IN (176 ülke) 
+- wb SP.DYN.CBRT.IN (176 ülke) 
+- wb SP.POP.65UP.TO.ZS (176 ülke) 
+- wb SP.POP.0014.TO.ZS (176 ülke) 
+- wb SM.POP.TOTL (175 ülke) 
+- wb SM.POP.NETM (176 ülke) 
+- wb ST.INT.ARVL (169 ülke) 
+- wb ST.INT.RCPT.CD (172 ülke) 
+- wb ST.INT.DPRT (123 ülke) 
+- wb ST.INT.XPND.CD (171 ülke) 
+- wb IT.NET.USER.ZS (176 ülke) 
+- wb IT.CEL.SETS (176 ülke) 
+- wb IT.CEL.SETS.P2 (176 ülke) 
+- wb IT.NET.BBND (174 ülke) 
+- wb IT.NET.SECR (175 ülke) 
+- wb IP.PAT.RESD (150 ülke) 
+- wb IP.JRN.ARTC.SC (174 ülke) 
+- wb GB.XPD.RSDV.GD.ZS (144 ülke) 
+- wb SP.POP.SCIE.RD.P6 (138 ülke) 
+- wb BX.GSR.CCIS.CD (164 ülke) 
+- wb EG.USE.PCAP.KG.OE (162 ülke) 
+- wb EG.USE.ELEC.KH.PC (148 ülke) 
+- wb EG.FEC.RNEW.ZS (175 ülke) 
+- wb EG.ELC.RNEW.ZS (175 ülke) 
+- wb EG.ELC.HYRO.ZS (175 ülke) 
+- wb EG.IMP.CONS.ZS (144 ülke) 
+- wb EN.GHG.CO2.MT.CE.AR5 (171 ülke) 
+- wb EN.GHG.CO2.PC.CE.AR5 (171 ülke) 
+- wb AG.LND.FRST.K2 (173 ülke) 
+- wb AG.LND.FRST.ZS (173 ülke) 
+- wb AG.LND.AGRI.K2 (174 ülke) 
+- wb AG.LND.ARBL.HA (174 ülke) 
+- wb AG.PRD.CREL.MT (171 ülke) 
+- wb AG.LND.CREL.HA (171 ülke) 
+- wb AG.YLD.CREL.KG (171 ülke) 
+- wb ER.H2O.FWTL.K3 (172 ülke) 
+- wb AG.LND.IRIG.AG.ZS (117 ülke) 
+- wb SH.XPD.CHEX.PC.CD (171 ülke) 
+- wb SH.XPD.CHEX.GD.ZS (171 ülke) 
+- wb SH.MED.PHYS.ZS (175 ülke) 
+- wb SH.MED.BEDS.ZS (174 ülke) 
+- wb SP.DYN.IMRT.IN (173 ülke) 
+- wb SH.DYN.MORT (173 ülke) 
+- wb SE.XPD.TOTL.GD.ZS (173 ülke) 
+- wb SE.TER.ENRR (173 ülke) 
+- wb SE.SEC.ENRR (174 ülke) 
+- wb SE.ADT.LITR.ZS (150 ülke) 
+- wb SE.PRM.ENRR (174 ülke) 
+- wb IS.AIR.PSGR (171 ülke) 
+- wb IS.AIR.DPRT (171 ülke) 
+- wb IS.AIR.GOOD.MT.K1 (171 ülke) 
+- wb IS.SHP.GOOD.TU (136 ülke) 
+- wb IS.RRS.TOTL.KM (116 ülke) 
+- wb IS.RRS.PASG.KM (107 ülke) 
+- wb IS.RRS.GOOD.MT.K6 (112 ülke) 
+- wb SG.GEN.PARL.ZS (171 ülke) 
+- wb SL.TLF.CACT.FE.ZS (175 ülke) 
+- wb SI.POV.GINI (158 ülke) 
+- wb SL.EMP.TOTL.SP.ZS (175 ülke) 
+- wb SP.DYN.LE00.FE.IN (176 ülke) 
+- wb SP.DYN.LE00.MA.IN (176 ülke) 
