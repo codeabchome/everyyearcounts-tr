@@ -46,8 +46,8 @@ def tr_buyuk(s):
     return s.replace("i", "İ").replace("ı", "I").upper()
 
 
-def tr_sayi(v, birim):
-    if birim in ("%", "‰"):
+def tr_sayi(v, birim, ondalik=False):
+    if birim in ("%", "‰") or ondalik:
         return f"{v:,.1f}".replace(",", "X").replace(".", ",").replace("X", ".")
     if abs(v) >= 1_000_000_000:
         return f"{v/1_000_000_000:,.1f}".replace(".", ",") + " milyar"
@@ -175,7 +175,7 @@ def kare(base, cfg, yil, degerler, poz, maxv):
         d.text((LX+LW, y+BH/2-2), ad, font=f_ad,
                fill=INK if hot else (206, 214, 228), anchor="rm")
         bar(d, BX, y, w, BH, renk)
-        etiket = tr_sayi(v, cfg["birim"])
+        etiket = tr_sayi(v, cfg["birim"], cfg.get("ondalik", False))
         tw = d.textlength(etiket, font=f_dg)
         if w > tw + 56:
             d.text((BX+w-26, y+BH/2-2), etiket, font=f_dg, fill=INK, anchor="rm")
@@ -200,9 +200,14 @@ def render(veri_yolu, cikti, cfg_ek, yil_sn=None, tut_sn=2.5, ters=False,
         y0 = xs[0] if y0 is None else min(y0, xs[0])
         y1 = xs[-1] if y1 is None else max(y1, xs[-1])
 
-    cfg = {"baslik1": "EN YÜKSEK", "baslik2": "10 İL",
+    cfg = {"baslik1": "EN YÜKSEK", "baslik2": f"10 İL",
            "altbaslik": tr_buyuk(veri["ad"]), "kaynak": veri["kaynak"],
-           "birim": veri["birim"], "y0": y0, "y1": y1}
+           "birim": veri["birim"], "y0": y0, "y1": y1,
+           # kaynakta ondalikli ve degerler kucukse etikette de ondalik goster;
+           # yoksa 11,4 ile 11,8 ekranda ayni ("11") gorunur
+           "ondalik": any(float(v) != int(v)
+                          for sr in seriler.values() for v in sr.ys)
+                      and max(v for sr in seriler.values() for v in sr.ys) < 1000}
     cfg.update(cfg_ek)
 
     # seri kisaysa yil basina sure uzar; her video ~hedef_sure saniye olsun
@@ -229,7 +234,7 @@ def render(veri_yolu, cikti, cfg_ek, yil_sn=None, tut_sn=2.5, ters=False,
             return None
         sirali = sorted(deg.items(), key=lambda kv: kv[1], reverse=not ters)
         hedef = {ad: i for i, (ad, _) in enumerate(sirali)}
-        k = 0.19
+        k = 0.26   # sira degisimi ne kadar cabuk otursun (yuksek = daha keskin)
         for ad, h in hedef.items():
             if ad not in poz or ilk:
                 poz[ad] = float(h)

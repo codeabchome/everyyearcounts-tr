@@ -2,7 +2,7 @@
 """Türkiye Kaçıncı? — orkestratör.
 
 Akış:  kuyruktan konu seç → render → müzik ekle → metadata → YouTube'a yükle
-       → state_tr.json güncelle
+       → state.json güncelle
 
 Elle test (yükleme yapmadan):
     python main_tr.py --kuru
@@ -14,6 +14,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 import traceback
 from datetime import date
 
@@ -124,7 +125,7 @@ def metadata(konu, y0, y1):
 
 
 # ---------------------------------------------------------------- ana akış
-def bir_video(konu, kuru=False):
+def bir_video(konu, kuru=False, deneme=False):
     veri_yolu = os.path.join(BURADA, konu["veri"])
     veri = json.load(open(veri_yolu, encoding="utf-8"))
     y0 = veri["y0"]
@@ -142,7 +143,10 @@ def bir_video(konu, kuru=False):
         print("  (kuru çalışma — yükleme yapılmadı)")
         return None, video
     import upload
-    vid = upload.upload_video(video, meta, category="27")
+    gizlilik = "private" if deneme else None      # None -> EYC_PRIVACY
+    if deneme:
+        meta["title"] = "[DENEME] " + meta["title"]
+    vid = upload.upload_video(video, meta, category="27", privacy=gizlilik)
     print(f"  yüklendi: https://youtu.be/{vid}")
     return vid, video
 
@@ -150,6 +154,8 @@ def bir_video(konu, kuru=False):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--kuru", action="store_true", help="render et ama yükleme")
+    ap.add_argument("--deneme", action="store_true",
+                    help="GİZLİ yükle ve konuyu yayınlanmış SAYMA (deneme videosu)")
     ap.add_argument("--konu", help="belirli bir konu id'si")
     a = ap.parse_args()
 
@@ -161,9 +167,9 @@ def main():
         print("kuyrukta konu yok"); return 1
 
     for konu in adaylar:
-        print(f"== {konu['id']}  ({konu['baslik1']} {konu['baslik2']})")
+        print(f"\n== {konu['id']}  ({konu['baslik1']} {konu['baslik2']})")
         try:
-            vid, yol = bir_video(konu, kuru=a.kuru)
+            vid, yol = bir_video(konu, kuru=a.kuru, deneme=a.deneme)
         except Exception:
             traceback.print_exc()
             s["hatali"][konu["id"]] = s["hatali"].get(konu["id"], 0) + 1
@@ -171,7 +177,14 @@ def main():
                              "durum": "hata"})
             state_yaz(s)
             continue
-        if not a.kuru:
+        if a.deneme:
+            # deneme videosu kuyruğu TÜKETMEZ: konu yayınlanmış sayılmaz,
+            # ileride normal akışta herkese açık olarak tekrar yayınlanır
+            s["log"].append({"t": str(date.today()), "id": konu["id"],
+                             "durum": "deneme", "video": vid})
+            state_yaz(s)
+            print("  deneme: konu kuyrukta kaldı, sonra normal yayınlanacak")
+        elif not a.kuru:
             s["yayinlanan"].append(konu["id"])
             s["hatali"].pop(konu["id"], None)
             s["log"].append({"t": str(date.today()), "id": konu["id"],
