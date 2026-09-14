@@ -124,12 +124,60 @@ def metadata(konu, y0, y1):
             "tags": ETIKET + [konu["gosterge"].lower()]}
 
 
+# ---------------------------------------------------------------- ülke katmanı
+def ulke_veri_hazirla(konu):
+    """Ülke konusu için veriyi indirip il JSON'larıyla AYNI biçime çevirir.
+
+    Böylece renderer'ın tek bir okuma yolu oluyor: her konu bir dosya.
+    Dosya cikti/ altına yazılır, repoya girmez — veri her çalıştırmada
+    kaynağından tazeleniyor.
+    """
+    import discover_tr
+    from names_tr import NAMES_TR, REAL_COUNTRIES
+    from scopes_tr import scope_members
+
+    if konu["source"] == "wb":
+        seri = discover_tr.fetch_wb(konu["kod"])
+    else:
+        seri, _, _ = discover_tr.fetch_owid(konu["kod"])
+
+    uyeler = scope_members(konu["scope"], REAL_COUNTRIES)
+    secili = {iso: d for iso, d in seri.items() if iso in uyeler and d}
+    if "TUR" not in secili:
+        raise ValueError("Türkiye verisi yok — konu atlanıyor")
+
+    yillar = sorted({y for d in secili.values() for y in d})
+    y0, y1 = yillar[0], yillar[-1]
+    iller = {}
+    for iso, d in secili.items():
+        ad = NAMES_TR.get(iso)
+        if not ad:
+            continue
+        dizi = [d.get(y) for y in range(y0, y1 + 1)]
+        if sum(v is not None for v in dizi) >= 3:
+            iller[ad] = [round(v, 2) if v is not None else None for v in dizi]
+    if len(iller) < 12:
+        raise ValueError(f"yeterli ülke yok ({len(iller)})")
+
+    payload = {"ad": konu["gosterge"], "birim": "", "kaynak": konu["kaynak"],
+               "not": "", "y0": y0, "iller": iller}
+    yol = os.path.join(CIKTI, konu["id"].replace(":", "_") + ".json")
+    with open(yol, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False)
+    return yol
+
+
 # ---------------------------------------------------------------- ana akış
 def bir_video(konu, kuru=False, deneme=False):
-    veri_yolu = os.path.join(BURADA, konu["veri"])
+    if konu.get("tur") == "ulke":
+        veri_yolu = ulke_veri_hazirla(konu)
+    else:
+        veri_yolu = os.path.join(BURADA, konu["veri"])
     veri = json.load(open(veri_yolu, encoding="utf-8"))
     y0 = veri["y0"]
     y1 = y0 + max(len(a) for a in veri["iller"].values()) - 1
+    konu.setdefault("kaynak", veri["kaynak"])
+    konu.setdefault("gosterge", veri["ad"])
 
     ad = konu["id"].replace(":", "_")
     ham = os.path.join(CIKTI, f"{ad}.mp4")

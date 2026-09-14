@@ -17,6 +17,7 @@ import json
 import os
 
 from data_memleket import ilgi
+from data_degisim import DEGISIM, yil_eki
 
 BURADA = os.path.dirname(os.path.abspath(__file__))
 
@@ -203,10 +204,25 @@ def _serpistir(konular):
     return sira
 
 
+def degisim_konulari():
+    """data_degisim.py'deki tabloyu konu satırına çevirir; başlığa taban yılı girer."""
+    out = []
+    for kaynak, yon, b1, b2, tema, kademe in DEGISIM:
+        slug = f"{yon}_{kaynak}"
+        yol = os.path.join(BURADA, "veri_il", slug + ".json")
+        if not os.path.exists(yol):
+            continue
+        y0 = json.load(open(yol, encoding="utf-8"))["y0"]
+        out.append((slug, f"{y0}'{yil_eki(y0).upper()} BERİ", b1 + " " + b2,
+                    False, tema, kademe))
+    return out
+
+
 def il_konulari():
     kademeler = {}
     gorulen = set()
-    for satir in list(IL_KONULARI) + [m[:6] for m in memleket_konulari()]:
+    for satir in (list(IL_KONULARI) + degisim_konulari()
+                  + [m[:6] for m in memleket_konulari()]):
         dosya, b1, b2, ters, tema, kademe = satir
         anahtar = (dosya, ters)
         if anahtar in gorulen:      # aynı gösterge+yön iki kez yayınlanmasın
@@ -231,15 +247,55 @@ def il_konulari():
     return ok
 
 
+def _aralikli(ham, gosterge_arasi=14, kapsam_arasi=5):
+    """Skora göre sıralı listeyi, aynı gösterge/kapsam üst üste gelmeyecek
+    şekilde açar.
+
+    824 ülke konusunun çoğu aynı göstergenin farklı kapsamı ("Enflasyon"
+    8 ayrı kapsamda var). Ham skor sırasıyla yayınlansa arka arkaya aynı
+    grafik gelirdi. Açgözlü seçim: sırayı bozmadan, son N seçimde geçmiş
+    gösterge/kapsamı atla.
+    """
+    kalan = list(ham)
+    sira, son_g, son_k = [], [], []
+    while kalan:
+        secilen = None
+        for i, t in enumerate(kalan):
+            if t["code"] not in son_g and t["scope"] not in son_k:
+                secilen = kalan.pop(i)
+                break
+        if secilen is None:                       # kısıt sağlanamıyorsa gevşet
+            for i, t in enumerate(kalan):
+                if t["code"] not in son_g:
+                    secilen = kalan.pop(i)
+                    break
+        if secilen is None:
+            secilen = kalan.pop(0)
+        sira.append(secilen)
+        son_g = (son_g + [secilen["code"]])[-gosterge_arasi:]
+        son_k = (son_k + [secilen["scope"]])[-kapsam_arasi:]
+    return sira
+
+
 def ulke_konulari():
     yol = os.path.join(BURADA, "topics_tr.json")
     if not os.path.exists(yol):
         return []
+    ham = json.load(open(yol, encoding="utf-8"))
+    ham.sort(key=lambda t: -t.get("score", 0))
+    ham = _aralikli(ham)
     out = []
-    for t in json.load(open(yol, encoding="utf-8")):
+    for t in ham:
+        # "Dünyada Kişi Başına Gelir: Türkiye Kaçıncı?" -> iki satır başlık
+        if ":" in t["title"]:
+            b1, b2 = t["title"].split(":", 1)
+        else:
+            b1, b2 = t["title"], "TÜRKİYE KAÇINCI?"
         out.append({
             "id": t["id"], "tur": "ulke", "tema": t.get("scope", "dunya"),
+            "baslik1": tr_buyuk(b1.strip()), "baslik2": tr_buyuk(b2.strip()),
             "baslik": t["title"], "kaynak": t["source_label"],
+            "gosterge": t["indicator_tr"],
             "kod": t["code"], "source": t["source"], "scope": t["scope"],
             "ters": t["direction"] == "bottom", "kademe": 4,
         })

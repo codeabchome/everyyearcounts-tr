@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Türkiye Kaçıncı? — konu keşfi.
+"""EveryYearCounts TR — konu keşfi.
 
 Aday göstergeleri (candidates_tr.py) World Bank ve OWID'den çeker, her
 kapsam için şu iki eleği uygular:
@@ -41,7 +41,7 @@ LIMIT = int(os.environ.get("EYC_LIMIT", "0"))
 CACHE = "cache_discover"
 os.makedirs(CACHE, exist_ok=True)
 
-UA = {"User-Agent": "turkiyekacinci/1.0 (topic discovery)"}
+UA = {"User-Agent": "everyyearcounts-tr/1.0 (topic discovery)"}
 
 
 # ----------------------------------------------------------------- fetch
@@ -62,7 +62,7 @@ def _get(url, retries=3):
     raise last
 
 
-def _cached(key, url):
+def _cached(key, url, binary=False):
     path = os.path.join(CACHE, key)
     if os.path.exists(path):
         with open(path, "rb") as f:
@@ -98,14 +98,18 @@ def fetch_owid(slug):
     text = raw.decode("utf-8", errors="replace")
     reader = csv.reader(io.StringIO(text))
     header = next(reader)
+    # useColumnShortNames=true başlıkları küçük harfle döndürüyor ("entity, code,
+    # year, ..."), büyük harfli arama 73 OWID göstergesini birden eliyordu.
+    kucuk = [h.strip().lower() for h in header]
     try:
-        i_code, i_year = header.index("Code"), header.index("Year")
+        i_code, i_year = kucuk.index("code"), kucuk.index("year")
     except ValueError as e:
         raise ValueError(f"beklenmeyen başlık: {header[:5]}") from e
-    value_cols = [i for i in range(len(header)) if i not in (0, i_code, i_year)]
+    i_ent = kucuk.index("entity") if "entity" in kucuk else 0
+    value_cols = [i for i in range(len(header)) if i not in (i_ent, i_code, i_year)]
     if not value_cols:
         raise ValueError("değer sütunu yok")
-    i_val = value_cols[0]
+    i_val = value_cols[0]  # ilk değer sütunu; çok sütunlu slug'lar raporda görünür
     series = defaultdict(dict)
     for row in reader:
         if len(row) <= i_val:
@@ -119,9 +123,9 @@ def fetch_owid(slug):
     return series, header[i_val], len(value_cols)
 
 
-# ----------------------------------------------------------------- analiz
+# ----------------------------------------------------------------- analyse
 def analyse(series, members, direction):
-    """Bir gösterge x kapsam x yön için metrikler.
+    """Bir gösterge × kapsam × yön için metrikler.
 
     direction: 'top' (en yüksek 10) | 'bottom' (en düşük 10)
     """
@@ -129,6 +133,7 @@ def analyse(series, members, direction):
     if len(countries) < BARS + 2:
         return None, f"kapsamda verisi olan ülke az ({len(countries)})"
     years = sorted({y for c in countries for y in series[c]})
+    # bir yılda en az BARS+2 ülkenin verisi olsun
     usable = []
     for y in years:
         vals = [(series[c][y], c) for c in countries if y in series[c]]
@@ -136,6 +141,8 @@ def analyse(series, members, direction):
             usable.append((y, vals))
     if len(usable) < MIN_YEARS:
         return None, f"yeterli yıl yok ({len(usable)})"
+    # tek tek yıllar: boşluk varsa (ör. 5 yılda bir) atla — renderer komşudan doldurur ama
+    # sıralama analizi için ardışık yıllar daha doğru; yine de tüm usable yılları kullan
     rev = direction == "top"
     tur_in, ranks, swaps, prev = 0, [], 0, None
     for y, vals in usable:
@@ -217,7 +224,7 @@ def main():
                     **m,
                 })
 
-    # Merak skoru: Türkiye yüksek sırada + çok hareket = iyi.
+    # Merak skoru: Türkiye yüksek sırada + çok hareket = iyi. Sıralama için.
     for t in topics:
         t["score"] = round(t["swaps"] * (1 + 3 / t["tur_median_rank"]) * t["tur_share"], 1)
     topics.sort(key=lambda t: -t["score"])
