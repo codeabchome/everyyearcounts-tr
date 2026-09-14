@@ -12,6 +12,9 @@ on:
       konu:
         description: "Belirli konu id'si (boş bırakılabilir)"
         default: ""
+      deneme:
+        description: "Deneme videosu: gizli yükle, konuyu tüketme (evet/hayir)"
+        default: "hayir"
 # schedule:
 #   - cron: '30 6 * * *'     # 09:30 TR
 #   - cron: '30 11 * * *'    # 14:30 TR
@@ -51,6 +54,7 @@ jobs:
           ARGS=""
           if [ "${{ github.event.inputs.kuru }}" = "evet" ]; then ARGS="$ARGS --kuru"; fi
           if [ -n "${{ github.event.inputs.konu }}" ]; then ARGS="$ARGS --konu ${{ github.event.inputs.konu }}"; fi
+          if [ "${{ github.event.inputs.deneme }}" = "evet" ]; then ARGS="$ARGS --deneme"; fi
           python main_tr.py $ARGS
 
       - name: Kuru calismada videoyu sakla
