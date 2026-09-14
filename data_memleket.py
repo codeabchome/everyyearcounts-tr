@@ -13,38 +13,14 @@ nerede" sorusu, yoksa her videoda ilk sırada ilin kendisi çıkar.
 import json
 import os
 
-from data_sdmx import oku
 from data_il import yaz
+from ortak_tr import ilgi, slug  # noqa: F401  (dışarıdan da kullanılıyor)
 
 DOSYA = "İkamet edilen ile göre nüfus kütüğüne kayıtlı olunan il (TR,DF_ADNKS_T09,1.1).csv"
 ADNKS = "TÜİK · Adrese Dayalı Nüfus Kayıt Sistemi"
 
 VERI_IL = os.environ.get(
     "VERI_IL", os.path.join(os.path.dirname(os.path.abspath(__file__)), "veri_il"))
-
-# ASCII slug için Türkçe harf dönüşümü
-_HARF = str.maketrans({"ç": "c", "ğ": "g", "ı": "i", "ö": "o", "ş": "s", "ü": "u",
-                       "Ç": "c", "Ğ": "g", "İ": "i", "I": "i", "Ö": "o", "Ş": "s",
-                       "Ü": "u", "â": "a"})
-
-
-def slug(il):
-    return il.replace("İ", "i").replace("I", "i").lower().translate(_HARF).replace(" ", "-")
-
-
-SESLI = "aeıioöuü"
-KALIN = "aıou"          # bu ünlülerden sonra -lar
-_EK = {"a": "lı", "ı": "lı", "o": "lu", "u": "lu",
-       "e": "li", "i": "li", "ö": "lü", "ü": "lü"}
-
-
-def ilgi(il):
-    """'Sivas' -> 'Sivaslılar',  'Rize' -> 'Rizeliler',  'Ordu' -> 'Ordulular'."""
-    son = next((h for h in reversed(il.lower().translate(
-        str.maketrans({"İ": "i", "I": "ı"}))) if h in SESLI), "a")
-    ek = _EK[son]
-    cogul = "lar" if ek[-1] in KALIN else "ler"
-    return il + ek + cogul
 
 
 def matris():

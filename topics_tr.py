@@ -16,8 +16,7 @@ Yeni gösterge eklemek: veri_il/<slug>.json üret, aşağıdaki listeye satır e
 import json
 import os
 
-from data_memleket import ilgi
-from data_degisim import DEGISIM, yil_eki
+from ortak_tr import DEGISIM, bulunma, ilgi, tr_buyuk, yil_eki
 
 BURADA = os.path.dirname(os.path.abspath(__file__))
 
@@ -129,9 +128,6 @@ TEMA_SIRASI = ["nufus", "memleket", "ekonomi", "nereli", "aile", "goc",
 #   memleket_X ("X'te yaşayanlar nereli")  -> X ne kadar kalabalıksa o kadar önde
 #   nereli_X   ("X'liler nerede yaşıyor")  -> X'in diasporası ne kadar büyükse o kadar önde
 
-def tr_buyuk(s):
-    """Türkçe büyük harf: i -> İ, ı -> I (Python'un upper()'ı bunu bilmiyor)."""
-    return s.replace("i", "İ").replace("ı", "I").upper()
 
 
 def _sira(deger_fn, kaynak):
@@ -166,7 +162,7 @@ def memleket_konulari():
         if slug.startswith("memleket_"):
             il = veri["ad"].split(" Nüfusunun")[0]
             r = pop_sira.get(il, 99)
-            out.append((slug, tr_buyuk(tr_kesme(il)) + " EN ÇOK",
+            out.append((slug, tr_buyuk(bulunma(il)) + " EN ÇOK",
                         "HANGİ İLDEN İNSAN VAR?",
                         False, "memleket", kademe(r, 10, 32), r))
         elif slug.startswith("nereli_"):
@@ -181,14 +177,6 @@ def memleket_konulari():
     return out
 
 
-def tr_kesme(il):
-    """'İstanbul' -> \"İSTANBUL'DA\" ; ünlü/ünsüz uyumuna göre -da/-de/-ta/-te."""
-    sesli = "aeıioöuü"
-    ad = il.lower().replace("İ", "i").replace("I", "ı")
-    son_sesli = next((h for h in reversed(ad) if h in sesli), "a")
-    ek = "d" if ad[-1] not in "fstkçşhp" else "t"
-    ek += "a" if son_sesli in "aıou" else "e"
-    return f"{il}'{ek}"
 
 
 def _serpistir(konular):

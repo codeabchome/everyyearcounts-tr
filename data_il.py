@@ -21,10 +21,11 @@ import subprocess
 import sys
 
 HAM = os.environ.get("TUIK_HAM", "/mnt/user-data/uploads/İSTATİSTİK YOUTUBE CLAUDE PROJELER/EveryYearCounts-TR/tuik-ham")
-OUT = os.environ.get("VERI_IL", "/home/claude/eyc-tr/veri_il")
+OUT = os.environ.get(
+    "VERI_IL", os.path.join(os.path.dirname(os.path.abspath(__file__)), "veri_il"))
 TMP = "/tmp/tuik_csv"
-os.makedirs(OUT, exist_ok=True)
-os.makedirs(TMP, exist_ok=True)
+# Klasörler import anında DEĞİL, yazma anında açılır: bu dosya sadece veri
+# üretirken çalışıyor, yayın yolunda import edilse bile yan etki yapmamalı.
 
 ILLER = None  # names_il.py'dan doldurulur (81 il)
 
@@ -66,6 +67,7 @@ def xls2csv(path):
 def yaz(ad, dosya, iller, birim, kaynak, not_="", ondalik=None):
     """Kompakt biçim: yıl anahtarları tekrar etmesin diye dizi olarak yazılır.
        {"y0": 2000, "iller": {"Adana": [v, v, null, ...]}}"""
+    os.makedirs(OUT, exist_ok=True)
     iller = {k: {int(y): v for y, v in d.items() if v is not None}
              for k, d in iller.items()}
     iller = {k: d for k, d in iller.items() if len(d) >= 3}
