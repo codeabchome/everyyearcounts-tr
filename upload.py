@@ -40,7 +40,7 @@ def upload_video(path, meta, category="27", privacy=None, thumbnail=None):
             "description": meta["description"][:5000],
             "tags": meta.get("tags", [])[:30],
             "categoryId": category,
-            "defaultLanguage": "en",
+            "defaultLanguage": "tr",
         },
         "status": {
             "privacyStatus": privacy,
