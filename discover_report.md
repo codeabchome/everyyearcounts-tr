@@ -1,53 +1,41 @@
 # discover_tr raporu
 
-**Toplam konu: 824**  (aday gösterge: 173, çekilen: 97, başarısız: 76)
+**Toplam konu: 1146**  (aday gösterge: 173, çekilen: 135, başarısız: 38)
 
 ## Kapsam başına konu
 
-- world: 3
-- europe: 55
-- eu_plus_tr: 67
-- middle_east: 87
-- neighbors: 98
-- balkans: 64
-- black_sea: 96
-- mediterranean: 91
-- islamic: 66
-- turkic_caucasus_ca: 82
-- g20: 57
-- emerging: 58
+- world: 12
+- europe: 83
+- eu_plus_tr: 95
+- middle_east: 118
+- neighbors: 132
+- balkans: 91
+- black_sea: 128
+- mediterranean: 124
+- islamic: 100
+- turkic_caucasus_ca: 111
+- g20: 71
+- emerging: 81
 
 ## Eleme sebepleri
 
-- Türkiye grafikte yok: 643
-- yeterli yıl yok: 135
-- kapsamda verisi olan ülke az: 31
-- sıralama durgun: 23
+- Türkiye grafikte yok: 736
+- yeterli yıl yok: 153
+- kapsamda verisi olan ülke az: 53
+- sıralama durgun: 24
 
 ## Başarısız kaynaklar (düzelt veya sil)
 
 - wb MS.MIL.XPND.ZS: Türkiye verisi yok
 - wb SM.POP.REFG: boş cevap
 - wb EG.ELC.PROD.KH: boş cevap
-- owid wheat-production: beklenmeyen başlık: ['entity', 'code', 'year', 'wheat__00000015__production__005510__tonnes']
-- owid barley-production: beklenmeyen başlık: ['entity', 'code', 'year', 'barley__00000044__production__005510__tonnes']
-- owid maize-production: beklenmeyen başlık: ['entity', 'code', 'year', 'maize__00000056__production__005510__tonnes']
-- owid rice-production: beklenmeyen başlık: ['entity', 'code', 'year', 'rice__00000027__production__005510__tonnes']
-- owid potato-production: beklenmeyen başlık: ['entity', 'code', 'year', 'potatoes__00000116__production__005510__tonnes']
-- owid tomato-production: beklenmeyen başlık: ['entity', 'code', 'year', 'tomatoes__00000388__production__005510__tonnes']
-- owid apple-production: beklenmeyen başlık: ['entity', 'code', 'year', 'apples__00000515__production__005510__tonnes']
 - owid grape-production: HTTP 404 (slug/kod yanlış olabilir)
-- owid orange-production: beklenmeyen başlık: ['entity', 'code', 'year', 'oranges__00000490__production__005510__tonnes']
-- owid banana-production: beklenmeyen başlık: ['entity', 'code', 'year', 'bananas__00000486__production__005510__tonnes']
 - owid olive-production: HTTP 404 (slug/kod yanlış olabilir)
 - owid tea-production: HTTP 404 (slug/kod yanlış olabilir)
-- owid coffee-bean-production: beklenmeyen başlık: ['entity', 'code', 'year', 'coffee__green__00000656__production__005510__tonnes']
-- owid cocoa-bean-production: beklenmeyen başlık: ['entity', 'code', 'year', 'cocoa_beans__00000661__production__005510__tonnes']
-- owid sugar-cane-production: beklenmeyen başlık: ['entity', 'code', 'year', 'sugar_cane__00000156__production__005510__tonnes']
-- owid sugar-beet-production: beklenmeyen başlık: ['entity', 'code', 'year', 'sugar_beet__00000157__production__005510__tonnes']
-- owid sunflower-seed-production: beklenmeyen başlık: ['entity', 'code', 'year', 'sunflower_seed__00000267__production__005510__tonnes']
+- owid coffee-bean-production: Türkiye verisi yok
+- owid cocoa-bean-production: Türkiye verisi yok
+- owid sugar-cane-production: Türkiye verisi yok
 - owid cotton-production: HTTP 404 (slug/kod yanlış olabilir)
-- owid tobacco-production: beklenmeyen başlık: ['entity', 'code', 'year', 'tobacco__00000826__production__005510__tonnes']
 - owid lemon-production: HTTP 404 (slug/kod yanlış olabilir)
 - owid cherry-production: HTTP 404 (slug/kod yanlış olabilir)
 - owid apricot-production: HTTP 404 (slug/kod yanlış olabilir)
@@ -63,42 +51,16 @@
 - owid pepper-production: HTTP 404 (slug/kod yanlış olabilir)
 - owid onion-production: HTTP 404 (slug/kod yanlış olabilir)
 - owid honey-production: HTTP 404 (slug/kod yanlış olabilir)
-- owid egg-production-thousand-tonnes: beklenmeyen başlık: ['entity', 'code', 'year', 'eggs__00001783__production__005510__tonnes']
-- owid milk-production-tonnes: beklenmeyen başlık: ['entity', 'code', 'year', 'milk__00001780__production__005510__tonnes']
-- owid meat-production-tonnes: beklenmeyen başlık: ['entity', 'code', 'year', 'meat__total__00001765__production__005510__tonnes']
-- owid chicken-meat-production: beklenmeyen başlık: ['entity', 'code', 'year', 'meat__chicken__00001058__production__005510__tonnes']
-- owid beef-and-buffalo-meat-production-tonnes: beklenmeyen başlık: ['entity', 'code', 'year', 'meat__beef_and_buffalo__00001806__production__005510__tonnes']
 - owid sheep-and-goat-meat-production: HTTP 404 (slug/kod yanlış olabilir)
 - owid number-of-cattle: HTTP 404 (slug/kod yanlış olabilir)
 - owid number-of-sheep: HTTP 404 (slug/kod yanlış olabilir)
 - owid number-of-goats: HTTP 404 (slug/kod yanlış olabilir)
 - owid number-of-chickens: HTTP 404 (slug/kod yanlış olabilir)
-- owid capture-fishery-production: beklenmeyen başlık: ['entity', 'code', 'year', 'er_fsh_capt_mt']
 - owid aquaculture-production: HTTP 404 (slug/kod yanlış olabilir)
-- owid electricity-generation: beklenmeyen başlık: ['entity', 'code', 'year', 'total_generation__twh']
-- owid primary-energy-cons: beklenmeyen başlık: ['entity', 'code', 'year', 'total_energy_supply_twh']
-- owid solar-energy-consumption: beklenmeyen başlık: ['entity', 'code', 'year', 'solar_generation__twh']
-- owid wind-generation: beklenmeyen başlık: ['entity', 'code', 'year', 'wind_generation__twh']
-- owid hydropower-consumption: beklenmeyen başlık: ['entity', 'code', 'year', 'hydro_generation__twh']
 - owid geothermal-energy-generation: HTTP 404 (slug/kod yanlış olabilir)
-- owid coal-production-by-country: beklenmeyen başlık: ['entity', 'code', 'year', 'coal_production_twh']
-- owid oil-production-by-country: beklenmeyen başlık: ['entity', 'code', 'year', 'oil_production_twh']
-- owid gas-production-by-country: beklenmeyen başlık: ['entity', 'code', 'year', 'gas_production_twh']
 - owid coal-consumption-by-country-terawatt-hours: HTTP 404 (slug/kod yanlış olabilir)
-- owid oil-consumption-by-country: beklenmeyen başlık: ['entity', 'code', 'year', 'oil_consumption_twh']
-- owid gas-consumption-by-country: beklenmeyen başlık: ['entity', 'code', 'year', 'gas_consumption_twh']
 - owid steel-production: HTTP 404 (slug/kod yanlış olabilir)
 - owid cement-production: HTTP 404 (slug/kod yanlış olabilir)
-- owid annual-co2-emissions-per-country: beklenmeyen başlık: ['entity', 'code', 'year', 'emissions_total']
-- owid military-expenditure-total: beklenmeyen başlık: ['entity', 'code', 'year', 'constant_usd', 'owid_region']
-- owid armed-forces-personnel: beklenmeyen başlık: ['entity', 'code', 'year', 'ms_mil_totl_p1', 'owid_region']
-- owid population: beklenmeyen başlık: ['entity', 'code', 'year', 'population_historical']
-- owid life-expectancy: beklenmeyen başlık: ['entity', 'code', 'year', 'life_expectancy_0']
-- owid human-development-index: beklenmeyen başlık: ['entity', 'code', 'year', 'hdi__sex_total', 'owid_region']
-- owid gdp-per-capita-maddison-project-database: beklenmeyen başlık: ['entity', 'code', 'year', 'gdp_per_capita', 'gdp_per_capita__annotations']
-- owid number-of-internet-users: beklenmeyen başlık: ['entity', 'code', 'year', 'it_net_user_zs_number']
-- owid mobile-cellular-subscriptions-per-100-people: beklenmeyen başlık: ['entity', 'code', 'year', 'it_cel_sets_p2']
-- owid international-tourist-trips: beklenmeyen başlık: ['entity', 'code', 'year', 'in_tour_arrivals_trips_total_overnight_vis_tourists', 'owid_region']
 - owid passenger-cars-per-1000-inhabitants: HTTP 404 (slug/kod yanlış olabilir)
 - owid olympic-medals: HTTP 404 (slug/kod yanlış olabilir)
 - owid number-of-scientific-publications: HTTP 404 (slug/kod yanlış olabilir)
@@ -106,45 +68,45 @@
 ## İlk 40 konu (skor)
 
 - 2022.7 | AB Ülkeleri ile Türkiye'de Enflasyon | TR medyan sıra 1, 1960-2025
+- 1608.0 | İslam Ülkeleri Arasında Arpa Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2024
 - 1564.0 | Balkanlar'da Nüfus Artış Hızı: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2025
-- 1404.0 | AB Ülkeleri ile Türkiye'de Doğum Oranı | TR medyan sıra 1, 1960-2024
+- 1396.0 | AB Ülkeleri ile Türkiye'de Doğum Oranı | TR medyan sıra 1, 1960-2024
 - 1392.0 | Karadeniz Ülkelerinde Nüfus Artış Hızı | TR medyan sıra 1, 1961-2025
-- 1336.0 | AB Ülkeleri ile Türkiye'de Doğurganlık Hızı | TR medyan sıra 1, 1960-2024
-- 1276.0 | AB ve Türkiye'de En Düşük Kadınlarda Yaşam Süresi: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2024
+- 1380.0 | AB Ülkeleri ile Türkiye'de Doğurganlık Hızı | TR medyan sıra 1, 1960-2024
+- 1268.0 | AB ve Türkiye'de En Düşük Kadınlarda Yaşam Süresi: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2024
+- 1248.0 | İslam Ülkeleri Arasında Buğday Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2024
+- 1228.0 | İslam Ülkeleri Arasında Ayçiçeği Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2024
+- 1216.0 | İslam Ülkeleri Arasında Kömür Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1900-2024
 - 1200.0 | Avrupa'da Doğum Oranı: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2024
 - 1192.0 | İslam Ülkeleri Arasında Milli Gelir (GSYH): Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2025
 - 1175.0 | Akdeniz Ülkelerinde Enflasyon: Türkiye Kaçıncı? | TR medyan sıra 2, 1965-2025
 - 1171.1 | G20 Ülkeleri Arasında Enflasyon: Türkiye Kaçıncı? | TR medyan sıra 2, 1960-2025
-- 1044.5 | Avrupa'da En Düşük 1000 Kişiye Düşen Doktor: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2022
-- 1028.0 | Karadeniz Ülkelerinde Doğurganlık Hızı | TR medyan sıra 1, 1960-2024
+- 1112.0 | İslam Ülkeleri Arasında Domates Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2024
+- 1084.0 | Avrupa'da Tütün Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2024
+- 1080.0 | İslam Ülkeleri Arasında Elma Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2024
+- 1060.0 | İslam Ülkeleri Arasında Hidroelektrik Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1965-2025
+- 1048.0 | Karadeniz Ülkelerinde Doğurganlık Hızı | TR medyan sıra 1, 1960-2024
+- 1033.6 | Avrupa'da En Düşük 1000 Kişiye Düşen Doktor: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2022
+- 1032.0 | İslam Ülkeleri Arasında Patates Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2024
+- 1008.0 | AB Ülkeleri ile Türkiye'de Tütün Üretimi | TR medyan sıra 1, 1961-2024
 - 1005.1 | Avrupa'da Enflasyon: Türkiye Kaçıncı? | TR medyan sıra 3, 1960-2025
 -  996.4 | AB Ülkeleri ile Türkiye'de Nüfus Artış Hızı | TR medyan sıra 2, 1961-2025
+-  996.0 | Ortadoğu'da Arpa Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2024
+-  992.0 | İslam Ülkeleri Arasında Tütün Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2024
+-  972.0 | İslam Ülkeleri Arasında Şeker Pancarı Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2024
 -  970.0 | Ortadoğu'da En Düşük Nüfus Artış Hızı: Türkiye Kaçıncı? | TR medyan sıra 2, 1961-2025
 -  965.2 | İslam Ülkeleri Arasında Enflasyon: Türkiye Kaçıncı? | TR medyan sıra 3, 1964-2025
 -  928.2 | AB ve Türkiye'de En Düşük Kişi Başı Karbon Emisyonu: Türkiye Kaçıncı? | TR medyan sıra 1, 1970-2024
 -  928.0 | AB ve Türkiye'de En Düşük Hektar Başına Tahıl Verimi: Türkiye Kaçıncı? | TR medyan sıra 3, 1961-2024
 -  858.9 | Gelişen Ekonomiler Arasında Enflasyon: Türkiye Kaçıncı? | TR medyan sıra 4, 1960-2025
+-  836.0 | AB Ülkeleri ile Türkiye'de Domates Üretimi | TR medyan sıra 1, 1961-2024
 -  835.0 | İslam Ülkeleri Arasında Askeri Harcama: Türkiye Kaçıncı? | TR medyan sıra 2, 1960-2024
 -  828.0 | AB Ülkeleri ile Türkiye'de Çocuk Nüfus Oranı (0-14) | TR medyan sıra 1, 1960-2025
 -  826.6 | Avrupa'da En Düşük Hektar Başına Tahıl Verimi: Türkiye Kaçıncı? | TR medyan sıra 4, 1961-2024
+-  824.0 | Karadeniz Ülkelerinde Doğum Oranı | TR medyan sıra 1, 1960-2024
 -  815.9 | Avrupa'da Nüfus Artış Hızı: Türkiye Kaçıncı? | TR medyan sıra 3, 1961-2025
--  812.0 | Karadeniz Ülkelerinde Doğum Oranı | TR medyan sıra 1, 1960-2024
--  802.7 | Avrupa'da Doğurganlık Hızı: Türkiye Kaçıncı? | TR medyan sıra 2, 1960-2024
+-  808.0 | Ortadoğu'da Domates Üretimi: Türkiye Kaçıncı? | TR medyan sıra 1, 1961-2024
 -  795.0 | İslam Ülkeleri Arasında Toplam Yatırım Harcaması: Türkiye Kaçıncı? | TR medyan sıra 2, 1960-2025
--  787.5 | AB ve Türkiye'de En Düşük Ortalama Yaşam Süresi: Türkiye Kaçıncı? | TR medyan sıra 2, 1960-2024
--  774.0 | Ortadoğu'da Yabancı Yatırım Girişi: Türkiye Kaçıncı? | TR medyan sıra 3, 1972-2024
--  772.5 | AB Ülkeleri ile Türkiye'de Ekonomik Büyüme Hızı | TR medyan sıra 3, 1961-2025
--  756.2 | AB ve Türkiye'de En Düşük 1000 Kişiye Düşen Doktor: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2022
--  736.0 | Balkanlar'da Doğum Oranı: Türkiye Kaçıncı? | TR medyan sıra 1, 1960-2024
--  729.6 | AB ve Türkiye'de En Düşük 1000 Kişiye Düşen Hastane Yatağı: Türkiye Kaçıncı? | TR medyan sıra 1, 1970-2023
--  722.9 | Avrupa'da Gelir Eşitsizliği (Gini): Türkiye Kaçıncı? | TR medyan sıra 1, 1987-2023
--  718.2 | AB Ülkeleri ile Türkiye'de Askeri Harcamanın Milli Gelire Oranı | TR medyan sıra 3, 1960-2024
--  700.0 | G20'de En Düşük Hektar Başına Tahıl Verimi: Türkiye Kaçıncı? | TR medyan sıra 4, 1961-2023
--  696.0 | AB Ülkeleri ile Türkiye'de 5 Yaş Altı Ölüm Hızı | TR medyan sıra 1, 1960-2024
--  693.8 | İslam Ülkeleri Arasında Mal İthalatı: Türkiye Kaçıncı? | TR medyan sıra 3, 1960-2025
--  682.5 | Akdeniz Ülkelerinde Tahıl Üretimi: Türkiye Kaçıncı? | TR medyan sıra 2, 1961-2023
--  673.2 | Akdeniz Ülkelerinde Ekonomik Büyüme Hızı: Türkiye Kaçıncı? | TR medyan sıra 4, 1967-2025
--  669.0 | G20 Ülkeleri Arasında Ekonomik Büyüme Hızı: Türkiye Kaçıncı? | TR medyan sıra 4, 1961-2025
 
 ## Çekilen kaynaklar
 
@@ -245,3 +207,41 @@
 - wb SL.EMP.TOTL.SP.ZS (175 ülke) 
 - wb SP.DYN.LE00.FE.IN (176 ülke) 
 - wb SP.DYN.LE00.MA.IN (176 ülke) 
+- owid wheat-production (124 ülke) sütun=wheat__00000015__production__005510__tonnes
+- owid barley-production (106 ülke) sütun=barley__00000044__production__005510__tonnes
+- owid maize-production (163 ülke) sütun=maize__00000056__production__005510__tonnes
+- owid rice-production (137 ülke) sütun=rice__00000027__production__005510__tonnes
+- owid potato-production (152 ülke) sütun=potatoes__00000116__production__005510__tonnes
+- owid tomato-production (159 ülke) sütun=tomatoes__00000388__production__005510__tonnes
+- owid apple-production (93 ülke) sütun=apples__00000515__production__005510__tonnes
+- owid orange-production (128 ülke) sütun=oranges__00000490__production__005510__tonnes
+- owid banana-production (130 ülke) sütun=bananas__00000486__production__005510__tonnes
+- owid sugar-beet-production (69 ülke) sütun=sugar_beet__00000157__production__005510__tonnes
+- owid sunflower-seed-production (86 ülke) sütun=sunflower_seed__00000267__production__005510__tonnes
+- owid tobacco-production (141 ülke) sütun=tobacco__00000826__production__005510__tonnes
+- owid egg-production-thousand-tonnes (173 ülke) sütun=eggs__00001783__production__005510__tonnes
+- owid milk-production-tonnes (172 ülke) sütun=milk__00001780__production__005510__tonnes
+- owid meat-production-tonnes (176 ülke) sütun=meat__total__00001765__production__005510__tonnes
+- owid chicken-meat-production (174 ülke) sütun=meat__chicken__00001058__production__005510__tonnes
+- owid beef-and-buffalo-meat-production-tonnes (175 ülke) sütun=meat__beef_and_buffalo__00001806__production__005510__tonnes
+- owid capture-fishery-production (175 ülke) sütun=er_fsh_capt_mt
+- owid electricity-generation (176 ülke) sütun=total_generation__twh
+- owid primary-energy-cons (176 ülke) sütun=total_energy_supply_twh
+- owid solar-energy-consumption (176 ülke) sütun=solar_generation__twh
+- owid wind-generation (175 ülke) sütun=wind_generation__twh
+- owid hydropower-consumption (176 ülke) sütun=hydro_generation__twh
+- owid coal-production-by-country (176 ülke) sütun=coal_production_twh
+- owid oil-production-by-country (176 ülke) sütun=oil_production_twh
+- owid gas-production-by-country (176 ülke) sütun=gas_production_twh
+- owid oil-consumption-by-country (176 ülke) sütun=oil_consumption_twh
+- owid gas-consumption-by-country (176 ülke) sütun=gas_consumption_twh
+- owid annual-co2-emissions-per-country (175 ülke) sütun=emissions_total
+- owid military-expenditure-total (161 ülke) sütun=constant_usd (+1 sütun daha)
+- owid armed-forces-personnel (171 ülke) sütun=ms_mil_totl_p1 (+1 sütun daha)
+- owid population (176 ülke) sütun=population_historical
+- owid life-expectancy (176 ülke) sütun=life_expectancy_0
+- owid human-development-index (172 ülke) sütun=hdi__sex_total (+1 sütun daha)
+- owid gdp-per-capita-maddison-project-database (161 ülke) sütun=gdp_per_capita (+1 sütun daha)
+- owid number-of-internet-users (175 ülke) sütun=it_net_user_zs_number
+- owid mobile-cellular-subscriptions-per-100-people (175 ülke) sütun=it_cel_sets_p2
+- owid international-tourist-trips (164 ülke) sütun=in_tour_arrivals_trips_total_overnight_vis_tourists (+1 sütun daha)
