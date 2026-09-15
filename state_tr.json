@@ -1,6 +1,7 @@
 {
  "yayinlanan": [
-  "il:nufus:yuksek"
+  "il:nufus:yuksek",
+  "il:memleket_istanbul:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -16,6 +17,12 @@
    "id": "il:nufus:yuksek",
    "durum": "yayin",
    "video": "lAZVtLX9LwI"
+  },
+  {
+   "t": "2026-09-15",
+   "id": "il:memleket_istanbul:yuksek",
+   "durum": "yayin",
+   "video": "UIkkX4XXeJ4"
   }
  ]
 }
