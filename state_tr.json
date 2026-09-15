@@ -2,7 +2,8 @@
  "yayinlanan": [
   "il:nufus:yuksek",
   "il:memleket_istanbul:yuksek",
-  "il:gsyh_kisi_basi:yuksek"
+  "il:gsyh_kisi_basi:yuksek",
+  "il:nereli_sivas:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -30,6 +31,12 @@
    "id": "il:gsyh_kisi_basi:yuksek",
    "durum": "yayin",
    "video": "krjgtnxSHcY"
+  },
+  {
+   "t": "2026-09-15",
+   "id": "il:nereli_sivas:yuksek",
+   "durum": "yayin",
+   "video": "PCpsf33MbbA"
   }
  ]
 }
