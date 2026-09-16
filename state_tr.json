@@ -4,7 +4,8 @@
   "il:memleket_istanbul:yuksek",
   "il:gsyh_kisi_basi:yuksek",
   "il:nereli_sivas:yuksek",
-  "il:akraba_evlilik:yuksek"
+  "il:akraba_evlilik:yuksek",
+  "il:goc_net:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -44,6 +45,12 @@
    "id": "il:akraba_evlilik:yuksek",
    "durum": "yayin",
    "video": "ILD5dtr-C04"
+  },
+  {
+   "t": "2026-09-16",
+   "id": "il:goc_net:dusuk",
+   "durum": "yayin",
+   "video": "zz89bguaw-s"
   }
  ]
 }
