@@ -3,7 +3,8 @@
   "il:nufus:yuksek",
   "il:memleket_istanbul:yuksek",
   "il:gsyh_kisi_basi:yuksek",
-  "il:nereli_sivas:yuksek"
+  "il:nereli_sivas:yuksek",
+  "il:akraba_evlilik:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -37,6 +38,12 @@
    "id": "il:nereli_sivas:yuksek",
    "durum": "yayin",
    "video": "PCpsf33MbbA"
+  },
+  {
+   "t": "2026-09-16",
+   "id": "il:akraba_evlilik:yuksek",
+   "durum": "yayin",
+   "video": "ILD5dtr-C04"
   }
  ]
 }
