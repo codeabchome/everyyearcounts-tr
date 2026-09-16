@@ -5,7 +5,8 @@
   "il:gsyh_kisi_basi:yuksek",
   "il:nereli_sivas:yuksek",
   "il:akraba_evlilik:yuksek",
-  "il:goc_net:dusuk"
+  "il:goc_net:dusuk",
+  "il:otomobil_1000:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -51,6 +52,12 @@
    "id": "il:goc_net:dusuk",
    "durum": "yayin",
    "video": "zz89bguaw-s"
+  },
+  {
+   "t": "2026-09-16",
+   "id": "il:otomobil_1000:yuksek",
+   "durum": "yayin",
+   "video": "-xO2BJwHyx8"
   }
  ]
 }
