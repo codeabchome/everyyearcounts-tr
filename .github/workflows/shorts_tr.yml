@@ -1,5 +1,9 @@
 # Türkiye Kaçıncı? — günlük Shorts.
-# Cron AÇIK: günde 3 video (09:30 / 14:30 / 19:30 TR).
+# Cron AÇIK: günde 3 video. Hedef saatler 08:07 / 13:13 / 18:19 TR.
+# GitHub zamanlanmış işleri yoğunlukta saatlerce geciktirebiliyor (garanti yok);
+# ":00" ve ":30" dakikaları herkesin kullandığı slotlar olduğu için kuyruğa
+# giriyorduk — 3-5,5 saat gecikme ölçtük. Bu yüzden dakikalar tekil sayılara
+# çekildi ve saatler öne alındı: gecikme olmazsa da olsa makul saate düşsün.
 # Her çalıştırma kuyruktan SIRADAKİ konuyu alıp bir video yayınlar.
 # Durdurmak için schedule bloğunu yorum satırına al veya Actions'tan
 # iş akışını devre dışı bırak.
@@ -18,9 +22,9 @@ on:
         description: "Deneme videosu: gizli yükle, konuyu tüketme (evet/hayir)"
         default: "hayir"
   schedule:
-    - cron: '30 6 * * *'     # 09:30 TR
-    - cron: '30 11 * * *'    # 14:30 TR
-    - cron: '30 16 * * *'    # 19:30 TR
+    - cron: '7 5 * * *'      # 08:07 TR
+    - cron: '13 10 * * *'    # 13:13 TR
+    - cron: '19 15 * * *'    # 18:19 TR
 
 permissions:
   contents: write
