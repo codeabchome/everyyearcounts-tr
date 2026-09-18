@@ -9,7 +9,8 @@
   "il:otomobil_1000:yuksek",
   "il:hekim_10bin:dusuk",
   "il:ortanca_yas:yuksek",
-  "il:memleket_ankara:yuksek"
+  "il:memleket_ankara:yuksek",
+  "il:gsyh_kisi_basi:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -79,6 +80,12 @@
    "id": "il:memleket_ankara:yuksek",
    "durum": "yayin",
    "video": "sBehCGxuIHw"
+  },
+  {
+   "t": "2026-09-18",
+   "id": "il:gsyh_kisi_basi:dusuk",
+   "durum": "yayin",
+   "video": "WhpBmG7SMm8"
   }
  ]
 }
