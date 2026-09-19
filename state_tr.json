@@ -11,7 +11,8 @@
   "il:ortanca_yas:yuksek",
   "il:memleket_ankara:yuksek",
   "il:gsyh_kisi_basi:dusuk",
-  "il:nereli_erzurum:yuksek"
+  "il:nereli_erzurum:yuksek",
+  "il:bosanma_hizi:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -93,6 +94,12 @@
    "id": "il:nereli_erzurum:yuksek",
    "durum": "yayin",
    "video": "-YlUE5sFDgY"
+  },
+  {
+   "t": "2026-09-19",
+   "id": "il:bosanma_hizi:yuksek",
+   "durum": "yayin",
+   "video": "TGBv7C0tuZc"
   }
  ]
 }
