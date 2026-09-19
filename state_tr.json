@@ -13,7 +13,8 @@
   "il:gsyh_kisi_basi:dusuk",
   "il:nereli_erzurum:yuksek",
   "il:bosanma_hizi:yuksek",
-  "il:goc_egitim:yuksek"
+  "il:goc_egitim:yuksek",
+  "il:trafik_kaza_10bin:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -107,6 +108,12 @@
    "id": "il:goc_egitim:yuksek",
    "durum": "yayin",
    "video": "cqvOeooOBAU"
+  },
+  {
+   "t": "2026-09-19",
+   "id": "il:trafik_kaza_10bin:yuksek",
+   "durum": "yayin",
+   "video": "NSlGH5Is9JE"
   }
  ]
 }
