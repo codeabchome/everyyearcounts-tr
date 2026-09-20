@@ -14,7 +14,8 @@
   "il:nereli_erzurum:yuksek",
   "il:bosanma_hizi:yuksek",
   "il:goc_egitim:yuksek",
-  "il:trafik_kaza_10bin:yuksek"
+  "il:trafik_kaza_10bin:yuksek",
+  "il:bebek_olum:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -114,6 +115,12 @@
    "id": "il:trafik_kaza_10bin:yuksek",
    "durum": "yayin",
    "video": "NSlGH5Is9JE"
+  },
+  {
+   "t": "2026-09-20",
+   "id": "il:bebek_olum:yuksek",
+   "durum": "yayin",
+   "video": "bRBBW2hNkJU"
   }
  ]
 }
