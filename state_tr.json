@@ -17,7 +17,8 @@
   "il:trafik_kaza_10bin:yuksek",
   "il:bebek_olum:yuksek",
   "il:nufus_yogunlugu:yuksek",
-  "il:memleket_izmir:yuksek"
+  "il:memleket_izmir:yuksek",
+  "il:gsyh:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -135,6 +136,12 @@
    "id": "il:memleket_izmir:yuksek",
    "durum": "yayin",
    "video": "NXg4qmYX0Mk"
+  },
+  {
+   "t": "2026-09-21",
+   "id": "il:gsyh:yuksek",
+   "durum": "yayin",
+   "video": "eDEb7K4WqK0"
   }
  ]
 }
