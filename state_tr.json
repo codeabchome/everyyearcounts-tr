@@ -18,7 +18,8 @@
   "il:bebek_olum:yuksek",
   "il:nufus_yogunlugu:yuksek",
   "il:memleket_izmir:yuksek",
-  "il:gsyh:yuksek"
+  "il:gsyh:yuksek",
+  "il:nereli_kars:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -142,6 +143,12 @@
    "id": "il:gsyh:yuksek",
    "durum": "yayin",
    "video": "eDEb7K4WqK0"
+  },
+  {
+   "t": "2026-09-21",
+   "id": "il:nereli_kars:yuksek",
+   "durum": "yayin",
+   "video": "pvYEfcg5O8o"
   }
  ]
 }
