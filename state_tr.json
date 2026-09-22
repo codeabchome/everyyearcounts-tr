@@ -22,7 +22,8 @@
   "il:nereli_kars:yuksek",
   "il:dogurganlik:yuksek",
   "il:goc_alan:yuksek",
-  "il:yapi_ruhsat:yuksek"
+  "il:yapi_ruhsat:yuksek",
+  "il:dusus_bebek_olum:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -170,6 +171,12 @@
    "id": "il:yapi_ruhsat:yuksek",
    "durum": "yayin",
    "video": "2eu1QCJgjCw"
+  },
+  {
+   "t": "2026-09-22",
+   "id": "il:dusus_bebek_olum:yuksek",
+   "durum": "yayin",
+   "video": "SAsA9Hd3WDA"
   }
  ]
 }
