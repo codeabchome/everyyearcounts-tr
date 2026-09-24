@@ -28,7 +28,8 @@
   "il:memleket_bursa:yuksek",
   "il:nereli_yozgat:yuksek",
   "il:ilk_evlenme_kadin:yuksek",
-  "il:artis_otomobil_1000:yuksek"
+  "il:artis_otomobil_1000:yuksek",
+  "il:nufus:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -212,6 +213,12 @@
    "id": "il:artis_otomobil_1000:yuksek",
    "durum": "yayin",
    "video": "nwSPoNZp3vQ"
+  },
+  {
+   "t": "2026-09-24",
+   "id": "il:nufus:dusuk",
+   "durum": "yayin",
+   "video": "EMgai5K1nqM"
   }
  ]
 }
