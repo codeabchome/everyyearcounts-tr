@@ -26,7 +26,8 @@
   "il:dusus_bebek_olum:yuksek",
   "il:yabanci_nufus:yuksek",
   "il:memleket_bursa:yuksek",
-  "il:nereli_yozgat:yuksek"
+  "il:nereli_yozgat:yuksek",
+  "il:ilk_evlenme_kadin:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -198,6 +199,12 @@
    "id": "il:nereli_yozgat:yuksek",
    "durum": "yayin",
    "video": "OQJp-_lXNNE"
+  },
+  {
+   "t": "2026-09-24",
+   "id": "il:ilk_evlenme_kadin:yuksek",
+   "durum": "yayin",
+   "video": "brsDV9-cDmA"
   }
  ]
 }
