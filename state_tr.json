@@ -30,7 +30,8 @@
   "il:ilk_evlenme_kadin:yuksek",
   "il:artis_otomobil_1000:yuksek",
   "il:nufus:dusuk",
-  "il:memleket_antalya:yuksek"
+  "il:memleket_antalya:yuksek",
+  "il:dogurganlik:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -226,6 +227,12 @@
    "id": "il:memleket_antalya:yuksek",
    "durum": "yayin",
    "video": "HMAedWwcEpk"
+  },
+  {
+   "t": "2026-09-25",
+   "id": "il:dogurganlik:dusuk",
+   "durum": "yayin",
+   "video": "pDBMDR2c1pA"
   }
  ]
 }
