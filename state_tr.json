@@ -32,7 +32,8 @@
   "il:nufus:dusuk",
   "il:memleket_antalya:yuksek",
   "il:dogurganlik:dusuk",
-  "il:artis_nufus:yuksek"
+  "il:artis_nufus:yuksek",
+  "il:memleket_konya:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -240,6 +241,12 @@
    "id": "il:artis_nufus:yuksek",
    "durum": "yayin",
    "video": "8ZbFxsEbYUM"
+  },
+  {
+   "t": "2026-09-26",
+   "id": "il:memleket_konya:yuksek",
+   "durum": "yayin",
+   "video": "0ALt9BjK_pc"
   }
  ]
 }
