@@ -34,7 +34,8 @@
   "il:dogurganlik:dusuk",
   "il:artis_nufus:yuksek",
   "il:memleket_konya:yuksek",
-  "il:dusus_dogurganlik:yuksek"
+  "il:dusus_dogurganlik:yuksek",
+  "il:dusus_nufus:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -254,6 +255,12 @@
    "id": "il:dusus_dogurganlik:yuksek",
    "durum": "yayin",
    "video": "e3S4H-D-XQI"
+  },
+  {
+   "t": "2026-09-26",
+   "id": "il:dusus_nufus:yuksek",
+   "durum": "yayin",
+   "video": "Sva1FT2Gi0A"
   }
  ]
 }
