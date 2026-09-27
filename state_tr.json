@@ -36,7 +36,8 @@
   "il:memleket_konya:yuksek",
   "il:dusus_dogurganlik:yuksek",
   "il:dusus_nufus:yuksek",
-  "il:memleket_adana:yuksek"
+  "il:memleket_adana:yuksek",
+  "il:dusus_akraba_evlilik:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -268,6 +269,12 @@
    "id": "il:memleket_adana:yuksek",
    "durum": "yayin",
    "video": "qFsxXtUPjOQ"
+  },
+  {
+   "t": "2026-09-27",
+   "id": "il:dusus_akraba_evlilik:yuksek",
+   "durum": "yayin",
+   "video": "fWjdNHM8V5k"
   }
  ]
 }
