@@ -40,7 +40,8 @@
   "il:dusus_akraba_evlilik:yuksek",
   "il:artis_ortanca_yas:yuksek",
   "il:memleket_sanliurfa:yuksek",
-  "il:artis_bosanma_hizi:yuksek"
+  "il:artis_bosanma_hizi:yuksek",
+  "il:memleket_gaziantep:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -296,6 +297,12 @@
    "id": "il:artis_bosanma_hizi:yuksek",
    "durum": "yayin",
    "video": "RsrJ8CPLUfM"
+  },
+  {
+   "t": "2026-09-28",
+   "id": "il:memleket_gaziantep:yuksek",
+   "durum": "yayin",
+   "video": "t5wOuUNeRAs"
   }
  ]
 }
