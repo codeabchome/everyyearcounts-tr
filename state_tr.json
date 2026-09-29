@@ -41,7 +41,8 @@
   "il:artis_ortanca_yas:yuksek",
   "il:memleket_sanliurfa:yuksek",
   "il:artis_bosanma_hizi:yuksek",
-  "il:memleket_gaziantep:yuksek"
+  "il:memleket_gaziantep:yuksek",
+  "il:memleket_kocaeli:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -303,6 +304,12 @@
    "id": "il:memleket_gaziantep:yuksek",
    "durum": "yayin",
    "video": "t5wOuUNeRAs"
+  },
+  {
+   "t": "2026-09-29",
+   "id": "il:memleket_kocaeli:yuksek",
+   "durum": "yayin",
+   "video": "NZ8S1Ydoh8Q"
   }
  ]
 }
