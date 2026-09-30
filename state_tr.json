@@ -44,7 +44,8 @@
   "il:memleket_gaziantep:yuksek",
   "il:memleket_kocaeli:yuksek",
   "il:yasli_orani:yuksek",
-  "il:memleket_mersin:yuksek"
+  "il:memleket_mersin:yuksek",
+  "il:gsyh_tarim_payi:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -324,6 +325,12 @@
    "id": "il:memleket_mersin:yuksek",
    "durum": "yayin",
    "video": "Z5dTdhkQ9Lo"
+  },
+  {
+   "t": "2026-09-30",
+   "id": "il:gsyh_tarim_payi:yuksek",
+   "durum": "yayin",
+   "video": "if9IG9QIxl4"
   }
  ]
 }
