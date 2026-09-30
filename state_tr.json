@@ -46,7 +46,8 @@
   "il:yasli_orani:yuksek",
   "il:memleket_mersin:yuksek",
   "il:gsyh_tarim_payi:yuksek",
-  "il:nereli_corum:yuksek"
+  "il:nereli_corum:yuksek",
+  "il:akraba_evlilik:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -338,6 +339,12 @@
    "id": "il:nereli_corum:yuksek",
    "durum": "yayin",
    "video": "aK2EFsVli6g"
+  },
+  {
+   "t": "2026-09-30",
+   "id": "il:akraba_evlilik:dusuk",
+   "durum": "yayin",
+   "video": "WZW6HbJEDTQ"
   }
  ]
 }
