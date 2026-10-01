@@ -47,7 +47,8 @@
   "il:memleket_mersin:yuksek",
   "il:gsyh_tarim_payi:yuksek",
   "il:nereli_corum:yuksek",
-  "il:akraba_evlilik:dusuk"
+  "il:akraba_evlilik:dusuk",
+  "il:goc_veren:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -345,6 +346,12 @@
    "id": "il:akraba_evlilik:dusuk",
    "durum": "yayin",
    "video": "WZW6HbJEDTQ"
+  },
+  {
+   "t": "2026-10-01",
+   "id": "il:goc_veren:yuksek",
+   "durum": "yayin",
+   "video": "AWzpQ8j4B-g"
   }
  ]
 }
