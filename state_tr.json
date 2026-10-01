@@ -48,7 +48,8 @@
   "il:gsyh_tarim_payi:yuksek",
   "il:nereli_corum:yuksek",
   "il:akraba_evlilik:dusuk",
-  "il:goc_veren:yuksek"
+  "il:goc_veren:yuksek",
+  "il:traktor:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -352,6 +353,12 @@
    "id": "il:goc_veren:yuksek",
    "durum": "yayin",
    "video": "AWzpQ8j4B-g"
+  },
+  {
+   "t": "2026-10-01",
+   "id": "il:traktor:yuksek",
+   "durum": "yayin",
+   "video": "TiRCDT_6BSU"
   }
  ]
 }
