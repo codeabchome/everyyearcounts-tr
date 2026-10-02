@@ -50,7 +50,8 @@
   "il:akraba_evlilik:dusuk",
   "il:goc_veren:yuksek",
   "il:traktor:yuksek",
-  "il:hekim_10bin:yuksek"
+  "il:hekim_10bin:yuksek",
+  "il:cocuk_orani:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -366,6 +367,12 @@
    "id": "il:hekim_10bin:yuksek",
    "durum": "yayin",
    "video": "ljqQXNe0Xy8"
+  },
+  {
+   "t": "2026-10-02",
+   "id": "il:cocuk_orani:yuksek",
+   "durum": "yayin",
+   "video": "RZMtwBl4IZM"
   }
  ]
 }
