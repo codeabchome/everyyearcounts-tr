@@ -52,7 +52,8 @@
   "il:traktor:yuksek",
   "il:hekim_10bin:yuksek",
   "il:cocuk_orani:yuksek",
-  "il:memleket_diyarbakir:yuksek"
+  "il:memleket_diyarbakir:yuksek",
+  "il:gsyh_sanayi_payi:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -380,6 +381,12 @@
    "id": "il:memleket_diyarbakir:yuksek",
    "durum": "yayin",
    "video": "frgngqy1YWc"
+  },
+  {
+   "t": "2026-10-02",
+   "id": "il:gsyh_sanayi_payi:yuksek",
+   "durum": "yayin",
+   "video": "BCGH55q1j98"
   }
  ]
 }
