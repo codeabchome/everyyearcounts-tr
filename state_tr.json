@@ -54,7 +54,8 @@
   "il:cocuk_orani:yuksek",
   "il:memleket_diyarbakir:yuksek",
   "il:gsyh_sanayi_payi:yuksek",
-  "il:nereli_kastamonu:yuksek"
+  "il:nereli_kastamonu:yuksek",
+  "il:evlenme_hizi:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -394,6 +395,12 @@
    "id": "il:nereli_kastamonu:yuksek",
    "durum": "yayin",
    "video": "EoXKWYeqL9M"
+  },
+  {
+   "t": "2026-10-03",
+   "id": "il:evlenme_hizi:yuksek",
+   "durum": "yayin",
+   "video": "xYl8OVTsK3c"
   }
  ]
 }
