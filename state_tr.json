@@ -56,7 +56,8 @@
   "il:gsyh_sanayi_payi:yuksek",
   "il:nereli_kastamonu:yuksek",
   "il:evlenme_hizi:yuksek",
-  "il:goc_is:yuksek"
+  "il:goc_is:yuksek",
+  "il:motosiklet:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -408,6 +409,12 @@
    "id": "il:goc_is:yuksek",
    "durum": "yayin",
    "video": "_GF6T6gVnqw"
+  },
+  {
+   "t": "2026-10-04",
+   "id": "il:motosiklet:yuksek",
+   "durum": "yayin",
+   "video": "SnLUo2ZsERw"
   }
  ]
 }
