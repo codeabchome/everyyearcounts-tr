@@ -59,7 +59,8 @@
   "il:goc_is:yuksek",
   "il:motosiklet:yuksek",
   "il:yatak_10bin:yuksek",
-  "il:ortanca_yas:dusuk"
+  "il:ortanca_yas:dusuk",
+  "il:memleket_hatay:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -429,6 +430,12 @@
    "id": "il:ortanca_yas:dusuk",
    "durum": "yayin",
    "video": "QfU5MVw2Hio"
+  },
+  {
+   "t": "2026-10-05",
+   "id": "il:memleket_hatay:yuksek",
+   "durum": "yayin",
+   "video": "ZTgPqH85F-Q"
   }
  ]
 }
