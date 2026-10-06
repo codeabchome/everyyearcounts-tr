@@ -63,7 +63,8 @@
   "il:memleket_hatay:yuksek",
   "il:dusus_gsyh_tarim_payi:yuksek",
   "il:nereli_agri:yuksek",
-  "il:hanehalki:yuksek"
+  "il:hanehalki:yuksek",
+  "il:goc_net_hizi:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -457,6 +458,12 @@
    "id": "il:hanehalki:yuksek",
    "durum": "yayin",
    "video": "ZvJ0zNXypR4"
+  },
+  {
+   "t": "2026-10-06",
+   "id": "il:goc_net_hizi:yuksek",
+   "durum": "yayin",
+   "video": "oChyjhMHRXU"
   }
  ]
 }
