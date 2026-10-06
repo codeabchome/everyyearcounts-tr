@@ -62,7 +62,8 @@
   "il:ortanca_yas:dusuk",
   "il:memleket_hatay:yuksek",
   "il:dusus_gsyh_tarim_payi:yuksek",
-  "il:nereli_agri:yuksek"
+  "il:nereli_agri:yuksek",
+  "il:hanehalki:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -450,6 +451,12 @@
    "id": "il:nereli_agri:yuksek",
    "durum": "yayin",
    "video": "iduOGEvI6SM"
+  },
+  {
+   "t": "2026-10-06",
+   "id": "il:hanehalki:yuksek",
+   "durum": "yayin",
+   "video": "ZvJ0zNXypR4"
   }
  ]
 }
