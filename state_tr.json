@@ -65,7 +65,8 @@
   "il:nereli_agri:yuksek",
   "il:hanehalki:yuksek",
   "il:goc_net_hizi:yuksek",
-  "il:yapi_ruhsat_10bin:yuksek"
+  "il:yapi_ruhsat_10bin:yuksek",
+  "il:eczaci_10bin:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -471,6 +472,12 @@
    "id": "il:yapi_ruhsat_10bin:yuksek",
    "durum": "yayin",
    "video": "kFjcLwuYheE"
+  },
+  {
+   "t": "2026-10-07",
+   "id": "il:eczaci_10bin:yuksek",
+   "durum": "yayin",
+   "video": "ayMKerGasE4"
   }
  ]
 }
