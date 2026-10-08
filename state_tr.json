@@ -67,7 +67,8 @@
   "il:goc_net_hizi:yuksek",
   "il:yapi_ruhsat_10bin:yuksek",
   "il:eczaci_10bin:yuksek",
-  "il:nufus_artis_hizi:yuksek"
+  "il:nufus_artis_hizi:yuksek",
+  "il:memleket_manisa:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -485,6 +486,12 @@
    "id": "il:nufus_artis_hizi:yuksek",
    "durum": "yayin",
    "video": "k28Nwae0Kl8"
+  },
+  {
+   "t": "2026-10-08",
+   "id": "il:memleket_manisa:yuksek",
+   "durum": "yayin",
+   "video": "EjZQR9dI5gk"
   }
  ]
 }
