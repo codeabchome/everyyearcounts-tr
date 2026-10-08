@@ -69,11 +69,10 @@
   "il:eczaci_10bin:yuksek",
   "il:nufus_artis_hizi:yuksek",
   "il:memleket_manisa:yuksek",
-  "il:nereli_cankiri:yuksek"
+  "il:nereli_cankiri:yuksek",
+  "il:artis_gsyh_sanayi_payi:yuksek"
  ],
- "hatali": {
-  "il:artis_gsyh_sanayi_payi:yuksek": 1
- },
+ "hatali": {},
  "tur": 0,
  "log": [
   {
@@ -506,6 +505,12 @@
    "id": "il:nereli_cankiri:yuksek",
    "durum": "yayin",
    "video": "OwgOjI27XIg"
+  },
+  {
+   "t": "2026-10-08",
+   "id": "il:artis_gsyh_sanayi_payi:yuksek",
+   "durum": "yayin",
+   "video": "EBYiZqx29DM"
   }
  ]
 }
