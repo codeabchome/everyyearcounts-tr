@@ -70,7 +70,8 @@
   "il:nufus_artis_hizi:yuksek",
   "il:memleket_manisa:yuksek",
   "il:nereli_cankiri:yuksek",
-  "il:artis_gsyh_sanayi_payi:yuksek"
+  "il:artis_gsyh_sanayi_payi:yuksek",
+  "il:bosanma_hizi:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -511,6 +512,12 @@
    "id": "il:artis_gsyh_sanayi_payi:yuksek",
    "durum": "yayin",
    "video": "EBYiZqx29DM"
+  },
+  {
+   "t": "2026-10-09",
+   "id": "il:bosanma_hizi:dusuk",
+   "durum": "yayin",
+   "video": "16KDoj7zZx4"
   }
  ]
 }
