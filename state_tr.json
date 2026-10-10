@@ -73,7 +73,8 @@
   "il:artis_gsyh_sanayi_payi:yuksek",
   "il:bosanma_hizi:dusuk",
   "il:goc_konut:yuksek",
-  "il:kamyon:yuksek"
+  "il:kamyon:yuksek",
+  "il:bebek_olum:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -532,6 +533,12 @@
    "id": "il:kamyon:yuksek",
    "durum": "yayin",
    "video": "PsNSs3saB-o"
+  },
+  {
+   "t": "2026-10-10",
+   "id": "il:bebek_olum:dusuk",
+   "durum": "yayin",
+   "video": "63XwDPzzhzM"
   }
  ]
 }
