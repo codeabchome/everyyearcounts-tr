@@ -75,7 +75,8 @@
   "il:goc_konut:yuksek",
   "il:kamyon:yuksek",
   "il:bebek_olum:dusuk",
-  "il:yasli_bagimlilik:yuksek"
+  "il:yasli_bagimlilik:yuksek",
+  "il:memleket_kayseri:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -546,6 +547,12 @@
    "id": "il:yasli_bagimlilik:yuksek",
    "durum": "yayin",
    "video": "nRMtbqmeT_g"
+  },
+  {
+   "t": "2026-10-10",
+   "id": "il:memleket_kayseri:yuksek",
+   "durum": "yayin",
+   "video": "ewr25wD8qTw"
   }
  ]
 }
