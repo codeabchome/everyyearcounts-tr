@@ -77,7 +77,8 @@
   "il:bebek_olum:dusuk",
   "il:yasli_bagimlilik:yuksek",
   "il:memleket_kayseri:yuksek",
-  "il:nereli_ardahan:yuksek"
+  "il:nereli_ardahan:yuksek",
+  "il:ilk_evlenme_erkek:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -560,6 +561,12 @@
    "id": "il:nereli_ardahan:yuksek",
    "durum": "yayin",
    "video": "Jd-cbjnZOlc"
+  },
+  {
+   "t": "2026-10-11",
+   "id": "il:ilk_evlenme_erkek:yuksek",
+   "durum": "yayin",
+   "video": "3ZAY3c39YCw"
   }
  ]
 }
