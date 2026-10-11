@@ -78,7 +78,8 @@
   "il:yasli_bagimlilik:yuksek",
   "il:memleket_kayseri:yuksek",
   "il:nereli_ardahan:yuksek",
-  "il:ilk_evlenme_erkek:yuksek"
+  "il:ilk_evlenme_erkek:yuksek",
+  "il:goc_evlilik:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -567,6 +568,12 @@
    "id": "il:ilk_evlenme_erkek:yuksek",
    "durum": "yayin",
    "video": "3ZAY3c39YCw"
+  },
+  {
+   "t": "2026-10-11",
+   "id": "il:goc_evlilik:yuksek",
+   "durum": "yayin",
+   "video": "WEWL4S_zYYw"
   }
  ]
 }
