@@ -79,7 +79,8 @@
   "il:memleket_kayseri:yuksek",
   "il:nereli_ardahan:yuksek",
   "il:ilk_evlenme_erkek:yuksek",
-  "il:goc_evlilik:yuksek"
+  "il:goc_evlilik:yuksek",
+  "il:otomobil:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -574,6 +575,12 @@
    "id": "il:goc_evlilik:yuksek",
    "durum": "yayin",
    "video": "WEWL4S_zYYw"
+  },
+  {
+   "t": "2026-10-12",
+   "id": "il:otomobil:yuksek",
+   "durum": "yayin",
+   "video": "uWon2uhA32g"
   }
  ]
 }
