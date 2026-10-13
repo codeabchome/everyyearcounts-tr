@@ -84,7 +84,8 @@
   "il:hemsire_10bin:yuksek",
   "il:nufus_yogunlugu:dusuk",
   "il:memleket_samsun:yuksek",
-  "il:nereli_giresun:yuksek"
+  "il:nereli_giresun:yuksek",
+  "il:dogum_hizi:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -609,6 +610,12 @@
    "id": "il:nereli_giresun:yuksek",
    "durum": "yayin",
    "video": "tWYORFWSWQc"
+  },
+  {
+   "t": "2026-10-13",
+   "id": "il:dogum_hizi:yuksek",
+   "durum": "yayin",
+   "video": "vDY9XhBLusw"
   }
  ]
 }
