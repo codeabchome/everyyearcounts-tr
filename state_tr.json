@@ -86,7 +86,8 @@
   "il:memleket_samsun:yuksek",
   "il:nereli_giresun:yuksek",
   "il:dogum_hizi:yuksek",
-  "il:goc_tayin:yuksek"
+  "il:goc_tayin:yuksek",
+  "il:oranartis_otomobil:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -623,6 +624,12 @@
    "id": "il:goc_tayin:yuksek",
    "durum": "yayin",
    "video": "o5_sbGMP2qg"
+  },
+  {
+   "t": "2026-10-14",
+   "id": "il:oranartis_otomobil:yuksek",
+   "durum": "yayin",
+   "video": "uJP04paegI0"
   }
  ]
 }
