@@ -90,7 +90,8 @@
   "il:oranartis_otomobil:yuksek",
   "il:dis_hekimi_10bin:yuksek",
   "il:oranartis_nufus:yuksek",
-  "il:memleket_balikesir:yuksek"
+  "il:memleket_balikesir:yuksek",
+  "il:nereli_sinop:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -651,6 +652,12 @@
    "id": "il:memleket_balikesir:yuksek",
    "durum": "yayin",
    "video": "e2LNsRU3R4w"
+  },
+  {
+   "t": "2026-10-15",
+   "id": "il:nereli_sinop:yuksek",
+   "durum": "yayin",
+   "video": "soQKbPDrUnI"
   }
  ]
 }
