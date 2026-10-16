@@ -92,7 +92,8 @@
   "il:oranartis_nufus:yuksek",
   "il:memleket_balikesir:yuksek",
   "il:nereli_sinop:yuksek",
-  "il:ilk_anne_yasi:yuksek"
+  "il:ilk_anne_yasi:yuksek",
+  "il:artis_trafik_kaza_10bin:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -665,6 +666,12 @@
    "id": "il:ilk_anne_yasi:yuksek",
    "durum": "yayin",
    "video": "FrwuJzYAfos"
+  },
+  {
+   "t": "2026-10-16",
+   "id": "il:artis_trafik_kaza_10bin:yuksek",
+   "durum": "yayin",
+   "video": "0kpzsidwx5A"
   }
  ]
 }
