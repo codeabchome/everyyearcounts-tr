@@ -91,7 +91,8 @@
   "il:dis_hekimi_10bin:yuksek",
   "il:oranartis_nufus:yuksek",
   "il:memleket_balikesir:yuksek",
-  "il:nereli_sinop:yuksek"
+  "il:nereli_sinop:yuksek",
+  "il:ilk_anne_yasi:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -658,6 +659,12 @@
    "id": "il:nereli_sinop:yuksek",
    "durum": "yayin",
    "video": "soQKbPDrUnI"
+  },
+  {
+   "t": "2026-10-16",
+   "id": "il:ilk_anne_yasi:yuksek",
+   "durum": "yayin",
+   "video": "FrwuJzYAfos"
   }
  ]
 }
