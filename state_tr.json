@@ -98,7 +98,8 @@
   "il:artis_yasli_orani:yuksek",
   "il:memleket_tekirdag:yuksek",
   "il:nereli_mardin:yuksek",
-  "il:dusus_evlenme_hizi:yuksek"
+  "il:dusus_evlenme_hizi:yuksek",
+  "il:artis_yatak_10bin:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -707,6 +708,12 @@
    "id": "il:dusus_evlenme_hizi:yuksek",
    "durum": "yayin",
    "video": "9iARmVN7lM4"
+  },
+  {
+   "t": "2026-10-18",
+   "id": "il:artis_yatak_10bin:yuksek",
+   "durum": "yayin",
+   "video": "W0Jst3TMOLc"
   }
  ]
 }
