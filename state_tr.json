@@ -103,7 +103,8 @@
   "il:dusus_cocuk_orani:yuksek",
   "il:memleket_aydin:yuksek",
   "il:nereli_ordu:yuksek",
-  "il:artis_ilk_evlenme_kadin:yuksek"
+  "il:artis_ilk_evlenme_kadin:yuksek",
+  "il:artis_yabanci_nufus:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -742,6 +743,12 @@
    "id": "il:artis_ilk_evlenme_kadin:yuksek",
    "durum": "yayin",
    "video": "bGFU3E8hTQE"
+  },
+  {
+   "t": "2026-10-20",
+   "id": "il:artis_yabanci_nufus:yuksek",
+   "durum": "yayin",
+   "video": "81TeVGcjQu4"
   }
  ]
 }
