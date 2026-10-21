@@ -107,7 +107,8 @@
   "il:artis_yabanci_nufus:yuksek",
   "il:memleket_kahramanmaras:yuksek",
   "il:nereli_tokat:yuksek",
-  "il:artis_ilk_anne_yasi:yuksek"
+  "il:artis_ilk_anne_yasi:yuksek",
+  "il:memleket_sakarya:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -770,6 +771,12 @@
    "id": "il:artis_ilk_anne_yasi:yuksek",
    "durum": "yayin",
    "video": "DNB98C2Tcpg"
+  },
+  {
+   "t": "2026-10-21",
+   "id": "il:memleket_sakarya:yuksek",
+   "durum": "yayin",
+   "video": "zos9sAz15RA"
   }
  ]
 }
