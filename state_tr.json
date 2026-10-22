@@ -109,7 +109,8 @@
   "il:nereli_tokat:yuksek",
   "il:artis_ilk_anne_yasi:yuksek",
   "il:memleket_sakarya:yuksek",
-  "il:nereli_mus:yuksek"
+  "il:nereli_mus:yuksek",
+  "il:dusus_dogum_hizi:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -784,6 +785,12 @@
    "id": "il:nereli_mus:yuksek",
    "durum": "yayin",
    "video": "HN-9Y-StoC4"
+  },
+  {
+   "t": "2026-10-22",
+   "id": "il:dusus_dogum_hizi:yuksek",
+   "durum": "yayin",
+   "video": "WDMfTWH60LM"
   }
  ]
 }
