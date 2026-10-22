@@ -111,7 +111,8 @@
   "il:memleket_sakarya:yuksek",
   "il:nereli_mus:yuksek",
   "il:dusus_dogum_hizi:yuksek",
-  "il:memleket_van:yuksek"
+  "il:memleket_van:yuksek",
+  "il:nereli_siirt:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -798,6 +799,12 @@
    "id": "il:memleket_van:yuksek",
    "durum": "yayin",
    "video": "BGlsVzDGUmg"
+  },
+  {
+   "t": "2026-10-22",
+   "id": "il:nereli_siirt:yuksek",
+   "durum": "yayin",
+   "video": "PrJ_1WakK4k"
   }
  ]
 }
