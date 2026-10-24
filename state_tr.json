@@ -116,7 +116,8 @@
   "il:dusus_hanehalki:yuksek",
   "il:memleket_mugla:yuksek",
   "il:nereli_malatya:yuksek",
-  "il:memleket_denizli:yuksek"
+  "il:memleket_denizli:yuksek",
+  "il:nereli_trabzon:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -833,6 +834,12 @@
    "id": "il:memleket_denizli:yuksek",
    "durum": "yayin",
    "video": "DVfbGUpbe28"
+  },
+  {
+   "t": "2026-10-24",
+   "id": "il:nereli_trabzon:yuksek",
+   "durum": "yayin",
+   "video": "uRhXsOaQjyM"
   }
  ]
 }
