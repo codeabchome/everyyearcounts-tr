@@ -118,7 +118,8 @@
   "il:nereli_malatya:yuksek",
   "il:memleket_denizli:yuksek",
   "il:nereli_trabzon:yuksek",
-  "il:memleket_eskisehir:yuksek"
+  "il:memleket_eskisehir:yuksek",
+  "il:nereli_erzincan:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -847,6 +848,12 @@
    "id": "il:memleket_eskisehir:yuksek",
    "durum": "yayin",
    "video": "CQP7yxwpL5w"
+  },
+  {
+   "t": "2026-10-25",
+   "id": "il:nereli_erzincan:yuksek",
+   "durum": "yayin",
+   "video": "QfAsr0bFdWk"
   }
  ]
 }
