@@ -121,7 +121,8 @@
   "il:memleket_eskisehir:yuksek",
   "il:nereli_erzincan:yuksek",
   "il:memleket_mardin:yuksek",
-  "il:nereli_bitlis:yuksek"
+  "il:nereli_bitlis:yuksek",
+  "il:memleket_trabzon:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -868,6 +869,12 @@
    "id": "il:nereli_bitlis:yuksek",
    "durum": "yayin",
    "video": "KjUNuKJgJVg"
+  },
+  {
+   "t": "2026-10-26",
+   "id": "il:memleket_trabzon:yuksek",
+   "durum": "yayin",
+   "video": "fTqXoVVF9tU"
   }
  ]
 }
