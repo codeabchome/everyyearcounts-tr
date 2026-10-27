@@ -126,7 +126,8 @@
   "il:nereli_samsun:yuksek",
   "il:memleket_ordu:yuksek",
   "il:nereli_kirsehir:yuksek",
-  "il:memleket_malatya:yuksek"
+  "il:memleket_malatya:yuksek",
+  "il:nereli_gumushane:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -903,6 +904,12 @@
    "id": "il:memleket_malatya:yuksek",
    "durum": "yayin",
    "video": "l5hTy48jzQw"
+  },
+  {
+   "t": "2026-10-27",
+   "id": "il:nereli_gumushane:yuksek",
+   "durum": "yayin",
+   "video": "6lsXgAoSHf0"
   }
  ]
 }
