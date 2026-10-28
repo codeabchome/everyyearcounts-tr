@@ -129,7 +129,8 @@
   "il:memleket_malatya:yuksek",
   "il:nereli_gumushane:yuksek",
   "il:memleket_afyonkarahisar:yuksek",
-  "il:nereli_rize:yuksek"
+  "il:nereli_rize:yuksek",
+  "il:memleket_erzurum:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -924,6 +925,12 @@
    "id": "il:nereli_rize:yuksek",
    "durum": "yayin",
    "video": "21kRvbjoQJk"
+  },
+  {
+   "t": "2026-10-28",
+   "id": "il:memleket_erzurum:yuksek",
+   "durum": "yayin",
+   "video": "UX7c2_9E1cA"
   }
  ]
 }
