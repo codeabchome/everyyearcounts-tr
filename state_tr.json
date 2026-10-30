@@ -133,7 +133,8 @@
   "il:memleket_erzurum:yuksek",
   "il:nereli_adiyaman:yuksek",
   "il:memleket_batman:yuksek",
-  "il:nereli_van:yuksek"
+  "il:nereli_van:yuksek",
+  "il:nereli_diyarbakir:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -952,6 +953,12 @@
    "id": "il:nereli_van:yuksek",
    "durum": "yayin",
    "video": "kMKADq3uf2o"
+  },
+  {
+   "t": "2026-10-30",
+   "id": "il:nereli_diyarbakir:yuksek",
+   "durum": "yayin",
+   "video": "RuIk69hXNbo"
   }
  ]
 }
