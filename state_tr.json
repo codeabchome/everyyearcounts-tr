@@ -138,7 +138,8 @@
   "il:nereli_sanliurfa:yuksek",
   "il:nereli_artvin:yuksek",
   "il:nereli_amasya:yuksek",
-  "il:nereli_bayburt:yuksek"
+  "il:nereli_bayburt:yuksek",
+  "il:nereli_kirikkale:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -987,6 +988,12 @@
    "id": "il:nereli_bayburt:yuksek",
    "durum": "yayin",
    "video": "izyL8r9ZOAk"
+  },
+  {
+   "t": "2026-10-31",
+   "id": "il:nereli_kirikkale:yuksek",
+   "durum": "yayin",
+   "video": "SFHOVHPZm_o"
   }
  ]
 }
