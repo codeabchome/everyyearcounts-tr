@@ -140,7 +140,8 @@
   "il:nereli_amasya:yuksek",
   "il:nereli_bayburt:yuksek",
   "il:nereli_kirikkale:yuksek",
-  "il:nereli_tunceli:yuksek"
+  "il:nereli_tunceli:yuksek",
+  "il:nereli_afyonkarahisar:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1001,6 +1002,12 @@
    "id": "il:nereli_tunceli:yuksek",
    "durum": "yayin",
    "video": "hu4ey43fUu0"
+  },
+  {
+   "t": "2026-11-01",
+   "id": "il:nereli_afyonkarahisar:yuksek",
+   "durum": "yayin",
+   "video": "Z7hrSBZ1jsA"
   }
  ]
 }
