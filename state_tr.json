@@ -147,7 +147,8 @@
   "il:nereli_kahramanmaras:yuksek",
   "il:nereli_nigde:yuksek",
   "il:nereli_kayseri:yuksek",
-  "il:nereli_konya:yuksek"
+  "il:nereli_konya:yuksek",
+  "il:yasli_nufus:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1050,6 +1051,12 @@
    "id": "il:nereli_konya:yuksek",
    "durum": "yayin",
    "video": "HMfcwDly22U"
+  },
+  {
+   "t": "2026-11-03",
+   "id": "il:yasli_nufus:yuksek",
+   "durum": "yayin",
+   "video": "Ic2sRzYHcuM"
   }
  ]
 }
