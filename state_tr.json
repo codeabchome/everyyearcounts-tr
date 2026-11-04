@@ -149,7 +149,8 @@
   "il:nereli_kayseri:yuksek",
   "il:nereli_konya:yuksek",
   "il:yasli_nufus:yuksek",
-  "il:memleket_sivas:yuksek"
+  "il:memleket_sivas:yuksek",
+  "il:gsyh_tarim_payi:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -1064,6 +1065,12 @@
    "id": "il:memleket_sivas:yuksek",
    "durum": "yayin",
    "video": "RMf1VrSj_7g"
+  },
+  {
+   "t": "2026-11-04",
+   "id": "il:gsyh_tarim_payi:dusuk",
+   "durum": "yayin",
+   "video": "bzzipdSFQG0"
   }
  ]
 }
