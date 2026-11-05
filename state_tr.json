@@ -153,7 +153,8 @@
   "il:gsyh_tarim_payi:dusuk",
   "il:nereli_kilis:yuksek",
   "il:evlenme_sayisi:yuksek",
-  "il:goc_net:yuksek"
+  "il:goc_net:yuksek",
+  "il:yapi_izin:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1092,6 +1093,12 @@
    "id": "il:goc_net:yuksek",
    "durum": "yayin",
    "video": "8J9XSSz7KtM"
+  },
+  {
+   "t": "2026-11-05",
+   "id": "il:yapi_izin:yuksek",
+   "durum": "yayin",
+   "video": "Dddmw2ts7q0"
   }
  ]
 }
