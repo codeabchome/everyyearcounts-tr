@@ -156,7 +156,8 @@
   "il:goc_net:yuksek",
   "il:yapi_izin:yuksek",
   "il:hekim:yuksek",
-  "il:nufus_artis_hizi:dusuk"
+  "il:nufus_artis_hizi:dusuk",
+  "il:memleket_adiyaman:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1113,6 +1114,12 @@
    "id": "il:nufus_artis_hizi:dusuk",
    "durum": "yayin",
    "video": "CQgbLIW1yxw"
+  },
+  {
+   "t": "2026-11-06",
+   "id": "il:memleket_adiyaman:yuksek",
+   "durum": "yayin",
+   "video": "xrrmsB9PfLo"
   }
  ]
 }
