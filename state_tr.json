@@ -154,7 +154,8 @@
   "il:nereli_kilis:yuksek",
   "il:evlenme_sayisi:yuksek",
   "il:goc_net:yuksek",
-  "il:yapi_izin:yuksek"
+  "il:yapi_izin:yuksek",
+  "il:hekim:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1099,6 +1100,12 @@
    "id": "il:yapi_izin:yuksek",
    "durum": "yayin",
    "video": "Dddmw2ts7q0"
+  },
+  {
+   "t": "2026-11-06",
+   "id": "il:hekim:yuksek",
+   "durum": "yayin",
+   "video": "CwGcSE9iX_c"
   }
  ]
 }
