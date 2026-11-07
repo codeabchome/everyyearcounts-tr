@@ -159,7 +159,8 @@
   "il:nufus_artis_hizi:dusuk",
   "il:memleket_adiyaman:yuksek",
   "il:gsyh_sanayi_payi:dusuk",
-  "il:nereli_nevsehir:yuksek"
+  "il:nereli_nevsehir:yuksek",
+  "il:evlenme_hizi:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -1134,6 +1135,12 @@
    "id": "il:nereli_nevsehir:yuksek",
    "durum": "yayin",
    "video": "jYvrlt101qg"
+  },
+  {
+   "t": "2026-11-07",
+   "id": "il:evlenme_hizi:dusuk",
+   "durum": "yayin",
+   "video": "_48fLvHf56E"
   }
  ]
 }
