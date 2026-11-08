@@ -160,7 +160,8 @@
   "il:memleket_adiyaman:yuksek",
   "il:gsyh_sanayi_payi:dusuk",
   "il:nereli_nevsehir:yuksek",
-  "il:evlenme_hizi:dusuk"
+  "il:evlenme_hizi:dusuk",
+  "il:traktor:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -1141,6 +1142,12 @@
    "id": "il:evlenme_hizi:dusuk",
    "durum": "yayin",
    "video": "_48fLvHf56E"
+  },
+  {
+   "t": "2026-11-08",
+   "id": "il:traktor:dusuk",
+   "durum": "yayin",
+   "video": "D9beY-CrqPg"
   }
  ]
 }
