@@ -163,7 +163,8 @@
   "il:evlenme_hizi:dusuk",
   "il:traktor:dusuk",
   "il:yatak_10bin:dusuk",
-  "il:cocuk_orani:dusuk"
+  "il:cocuk_orani:dusuk",
+  "il:memleket_tokat:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1162,6 +1163,12 @@
    "id": "il:cocuk_orani:dusuk",
    "durum": "yayin",
    "video": "Pok33CcGOSU"
+  },
+  {
+   "t": "2026-11-09",
+   "id": "il:memleket_tokat:yuksek",
+   "durum": "yayin",
+   "video": "7PkqTglLhq0"
   }
  ]
 }
