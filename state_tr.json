@@ -166,7 +166,8 @@
   "il:cocuk_orani:dusuk",
   "il:memleket_tokat:yuksek",
   "il:nereli_batman:yuksek",
-  "il:anne_yasi:dusuk"
+  "il:anne_yasi:dusuk",
+  "il:otomobil_1000:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -1183,6 +1184,12 @@
    "id": "il:anne_yasi:dusuk",
    "durum": "yayin",
    "video": "PXP1TPZr808"
+  },
+  {
+   "t": "2026-11-10",
+   "id": "il:otomobil_1000:dusuk",
+   "durum": "yayin",
+   "video": "Mc-_r6xs9Dg"
   }
  ]
 }
