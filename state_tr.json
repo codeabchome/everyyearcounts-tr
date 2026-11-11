@@ -171,7 +171,8 @@
   "il:eczaci_10bin:dusuk",
   "il:yasli_orani:dusuk",
   "il:memleket_elazig:yuksek",
-  "il:nereli_hatay:yuksek"
+  "il:nereli_hatay:yuksek",
+  "il:ilk_evlenme_kadin:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -1218,6 +1219,12 @@
    "id": "il:nereli_hatay:yuksek",
    "durum": "yayin",
    "video": "HDvDt_xqJJ0"
+  },
+  {
+   "t": "2026-11-11",
+   "id": "il:ilk_evlenme_kadin:dusuk",
+   "durum": "yayin",
+   "video": "flYAZS5BnZw"
   }
  ]
 }
