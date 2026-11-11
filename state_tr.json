@@ -170,7 +170,8 @@
   "il:otomobil_1000:dusuk",
   "il:eczaci_10bin:dusuk",
   "il:yasli_orani:dusuk",
-  "il:memleket_elazig:yuksek"
+  "il:memleket_elazig:yuksek",
+  "il:nereli_hatay:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1211,6 +1212,12 @@
    "id": "il:memleket_elazig:yuksek",
    "durum": "yayin",
    "video": "PphWmyiEzPY"
+  },
+  {
+   "t": "2026-11-11",
+   "id": "il:nereli_hatay:yuksek",
+   "durum": "yayin",
+   "video": "HDvDt_xqJJ0"
   }
  ]
 }
