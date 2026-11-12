@@ -173,7 +173,8 @@
   "il:memleket_elazig:yuksek",
   "il:nereli_hatay:yuksek",
   "il:ilk_evlenme_kadin:dusuk",
-  "il:motosiklet:dusuk"
+  "il:motosiklet:dusuk",
+  "il:hastane_yatak:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1232,6 +1233,12 @@
    "id": "il:motosiklet:dusuk",
    "durum": "yayin",
    "video": "tnfy6FaOpIo"
+  },
+  {
+   "t": "2026-11-12",
+   "id": "il:hastane_yatak:yuksek",
+   "durum": "yayin",
+   "video": "RVT9ILe3AiA"
   }
  ]
 }
