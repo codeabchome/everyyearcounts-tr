@@ -174,7 +174,8 @@
   "il:nereli_hatay:yuksek",
   "il:ilk_evlenme_kadin:dusuk",
   "il:motosiklet:dusuk",
-  "il:hastane_yatak:yuksek"
+  "il:hastane_yatak:yuksek",
+  "il:yabanci_nufus:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -1239,6 +1240,12 @@
    "id": "il:hastane_yatak:yuksek",
    "durum": "yayin",
    "video": "RVT9ILe3AiA"
+  },
+  {
+   "t": "2026-11-12",
+   "id": "il:yabanci_nufus:dusuk",
+   "durum": "yayin",
+   "video": "cCnqGXK6fIM"
   }
  ]
 }
