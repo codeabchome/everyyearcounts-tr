@@ -177,7 +177,8 @@
   "il:hastane_yatak:yuksek",
   "il:yabanci_nufus:dusuk",
   "il:memleket_zonguldak:yuksek",
-  "il:nereli_osmaniye:yuksek"
+  "il:nereli_osmaniye:yuksek",
+  "il:dogum_hizi:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -1260,6 +1261,12 @@
    "id": "il:nereli_osmaniye:yuksek",
    "durum": "yayin",
    "video": "pUOaBWO5GfQ"
+  },
+  {
+   "t": "2026-11-13",
+   "id": "il:dogum_hizi:dusuk",
+   "durum": "yayin",
+   "video": "sTtPjEWAwoQ"
   }
  ]
 }
