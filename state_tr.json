@@ -178,7 +178,8 @@
   "il:yabanci_nufus:dusuk",
   "il:memleket_zonguldak:yuksek",
   "il:nereli_osmaniye:yuksek",
-  "il:dogum_hizi:dusuk"
+  "il:dogum_hizi:dusuk",
+  "il:trafik_kaza:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1267,6 +1268,12 @@
    "id": "il:dogum_hizi:dusuk",
    "durum": "yayin",
    "video": "sTtPjEWAwoQ"
+  },
+  {
+   "t": "2026-11-14",
+   "id": "il:trafik_kaza:yuksek",
+   "durum": "yayin",
+   "video": "aIzb_S-MEMQ"
   }
  ]
 }
