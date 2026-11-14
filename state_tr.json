@@ -180,7 +180,8 @@
   "il:nereli_osmaniye:yuksek",
   "il:dogum_hizi:dusuk",
   "il:trafik_kaza:yuksek",
-  "il:hemsire_10bin:dusuk"
+  "il:hemsire_10bin:dusuk",
+  "il:yasli_bagimlilik:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -1281,6 +1282,12 @@
    "id": "il:hemsire_10bin:dusuk",
    "durum": "yayin",
    "video": "Eo2DmaadhlE"
+  },
+  {
+   "t": "2026-11-14",
+   "id": "il:yasli_bagimlilik:dusuk",
+   "durum": "yayin",
+   "video": "wOOLjnxHF_M"
   }
  ]
 }
