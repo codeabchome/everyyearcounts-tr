@@ -182,7 +182,8 @@
   "il:trafik_kaza:yuksek",
   "il:hemsire_10bin:dusuk",
   "il:yasli_bagimlilik:dusuk",
-  "il:memleket_canakkale:yuksek"
+  "il:memleket_canakkale:yuksek",
+  "il:nereli_karabuk:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1295,6 +1296,12 @@
    "id": "il:memleket_canakkale:yuksek",
    "durum": "yayin",
    "video": "zMY3_uFWaLw"
+  },
+  {
+   "t": "2026-11-15",
+   "id": "il:nereli_karabuk:yuksek",
+   "durum": "yayin",
+   "video": "0W-35hQw9D0"
   }
  ]
 }
