@@ -184,7 +184,8 @@
   "il:yasli_bagimlilik:dusuk",
   "il:memleket_canakkale:yuksek",
   "il:nereli_karabuk:yuksek",
-  "il:hanehalki:dusuk"
+  "il:hanehalki:dusuk",
+  "il:yapi_ruhsat_10bin:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -1309,6 +1310,12 @@
    "id": "il:hanehalki:dusuk",
    "durum": "yayin",
    "video": "G2lQh2Lsp8A"
+  },
+  {
+   "t": "2026-11-16",
+   "id": "il:yapi_ruhsat_10bin:dusuk",
+   "durum": "yayin",
+   "video": "fjxWtxdml5M"
   }
  ]
 }
