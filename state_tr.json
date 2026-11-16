@@ -186,7 +186,8 @@
   "il:nereli_karabuk:yuksek",
   "il:hanehalki:dusuk",
   "il:yapi_ruhsat_10bin:dusuk",
-  "il:dis_hekimi_10bin:dusuk"
+  "il:dis_hekimi_10bin:dusuk",
+  "il:kir_orani:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1323,6 +1324,12 @@
    "id": "il:dis_hekimi_10bin:dusuk",
    "durum": "yayin",
    "video": "mSRssFK_G-M"
+  },
+  {
+   "t": "2026-11-16",
+   "id": "il:kir_orani:yuksek",
+   "durum": "yayin",
+   "video": "ADC94RXdZsE"
   }
  ]
 }
