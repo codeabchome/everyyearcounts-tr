@@ -187,7 +187,8 @@
   "il:hanehalki:dusuk",
   "il:yapi_ruhsat_10bin:dusuk",
   "il:dis_hekimi_10bin:dusuk",
-  "il:kir_orani:yuksek"
+  "il:kir_orani:yuksek",
+  "il:memleket_sirnak:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1330,6 +1331,12 @@
    "id": "il:kir_orani:yuksek",
    "durum": "yayin",
    "video": "ADC94RXdZsE"
+  },
+  {
+   "t": "2026-11-17",
+   "id": "il:memleket_sirnak:yuksek",
+   "durum": "yayin",
+   "video": "9Z7gn6VQsas"
   }
  ]
 }
