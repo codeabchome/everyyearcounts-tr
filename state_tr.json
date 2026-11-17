@@ -189,7 +189,8 @@
   "il:dis_hekimi_10bin:dusuk",
   "il:kir_orani:yuksek",
   "il:memleket_sirnak:yuksek",
-  "il:nereli_bolu:yuksek"
+  "il:nereli_bolu:yuksek",
+  "il:ilk_evlenme_erkek:dusuk"
  ],
  "hatali": {},
  "tur": 0,
@@ -1344,6 +1345,12 @@
    "id": "il:nereli_bolu:yuksek",
    "durum": "yayin",
    "video": "N3n4GEHRzaI"
+  },
+  {
+   "t": "2026-11-17",
+   "id": "il:ilk_evlenme_erkek:dusuk",
+   "durum": "yayin",
+   "video": "6Nj9PUrYXU0"
   }
  ]
 }
