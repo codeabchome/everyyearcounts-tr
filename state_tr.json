@@ -192,7 +192,8 @@
   "il:nereli_bolu:yuksek",
   "il:ilk_evlenme_erkek:dusuk",
   "il:kamyon:dusuk",
-  "il:oranartis_hekim:yuksek"
+  "il:oranartis_hekim:yuksek",
+  "il:artis_nufus_yogunlugu:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1365,6 +1366,12 @@
    "id": "il:oranartis_hekim:yuksek",
    "durum": "yayin",
    "video": "6pGfJ_mZvI0"
+  },
+  {
+   "t": "2026-11-18",
+   "id": "il:artis_nufus_yogunlugu:yuksek",
+   "durum": "yayin",
+   "video": "vQRreZUFxl8"
   }
  ]
 }
