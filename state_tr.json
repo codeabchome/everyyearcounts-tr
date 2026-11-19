@@ -193,7 +193,8 @@
   "il:ilk_evlenme_erkek:dusuk",
   "il:kamyon:dusuk",
   "il:oranartis_hekim:yuksek",
-  "il:artis_nufus_yogunlugu:yuksek"
+  "il:artis_nufus_yogunlugu:yuksek",
+  "il:memleket_kutahya:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1372,6 +1373,12 @@
    "id": "il:artis_nufus_yogunlugu:yuksek",
    "durum": "yayin",
    "video": "vQRreZUFxl8"
+  },
+  {
+   "t": "2026-11-19",
+   "id": "il:memleket_kutahya:yuksek",
+   "durum": "yayin",
+   "video": "X_2QxN1U2_M"
   }
  ]
 }
