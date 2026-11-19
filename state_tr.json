@@ -194,7 +194,8 @@
   "il:kamyon:dusuk",
   "il:oranartis_hekim:yuksek",
   "il:artis_nufus_yogunlugu:yuksek",
-  "il:memleket_kutahya:yuksek"
+  "il:memleket_kutahya:yuksek",
+  "il:nereli_adana:yuksek"
  ],
  "hatali": {},
  "tur": 0,
@@ -1379,6 +1380,12 @@
    "id": "il:memleket_kutahya:yuksek",
    "durum": "yayin",
    "video": "X_2QxN1U2_M"
+  },
+  {
+   "t": "2026-11-19",
+   "id": "il:nereli_adana:yuksek",
+   "durum": "yayin",
+   "video": "7MaFG8OREL4"
   }
  ]
 }
