@@ -199,17 +199,12 @@
   "il:ilk_anne_yasi:dusuk",
   "il:trafik_kaza_10bin:dusuk",
   "il:artis_hastane_yatak:yuksek",
-  "il:artis_yasli_nufus:yuksek"
+  "il:artis_yasli_nufus:yuksek",
+  "il:memleket_osmaniye:yuksek"
  ],
  "hatali": {},
  "tur": 0,
  "log": [
-  {
-   "t": "2026-09-15",
-   "id": "il:memleket_istanbul:yuksek",
-   "durum": "yayin",
-   "video": "UIkkX4XXeJ4"
-  },
   {
    "t": "2026-09-15",
    "id": "il:gsyh_kisi_basi:yuksek",
@@ -1402,6 +1397,12 @@
    "id": "il:artis_yasli_nufus:yuksek",
    "durum": "yayin",
    "video": "nxWFZEG-pdw"
+  },
+  {
+   "t": "2026-11-21",
+   "id": "il:memleket_osmaniye:yuksek",
+   "durum": "yayin",
+   "video": "KwRilrrO1F8"
   }
  ]
 }
