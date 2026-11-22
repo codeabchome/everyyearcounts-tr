@@ -204,17 +204,12 @@
   "il:nereli_balikesir:yuksek",
   "il:anne_yasi:yuksek",
   "il:oranartis_motosiklet:yuksek",
-  "il:artis_hemsire_10bin:yuksek"
+  "il:artis_hemsire_10bin:yuksek",
+  "il:artis_yasli_bagimlilik:yuksek"
  ],
  "hatali": {},
  "tur": 0,
  "log": [
-  {
-   "t": "2026-09-16",
-   "id": "il:otomobil_1000:yuksek",
-   "durum": "yayin",
-   "video": "-xO2BJwHyx8"
-  },
   {
    "t": "2026-09-17",
    "id": "il:hekim_10bin:dusuk",
@@ -1407,6 +1402,12 @@
    "id": "il:artis_hemsire_10bin:yuksek",
    "durum": "yayin",
    "video": "5TUUhZ0pdwI"
+  },
+  {
+   "t": "2026-11-22",
+   "id": "il:artis_yasli_bagimlilik:yuksek",
+   "durum": "yayin",
+   "video": "7hJ0XpBSVn0"
   }
  ]
 }
