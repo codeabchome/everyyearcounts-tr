@@ -202,17 +202,12 @@
   "il:artis_yasli_nufus:yuksek",
   "il:memleket_osmaniye:yuksek",
   "il:nereli_balikesir:yuksek",
-  "il:anne_yasi:yuksek"
+  "il:anne_yasi:yuksek",
+  "il:oranartis_motosiklet:yuksek"
  ],
  "hatali": {},
  "tur": 0,
  "log": [
-  {
-   "t": "2026-09-16",
-   "id": "il:akraba_evlilik:yuksek",
-   "durum": "yayin",
-   "video": "ILD5dtr-C04"
-  },
   {
    "t": "2026-09-16",
    "id": "il:goc_net:dusuk",
@@ -1405,6 +1400,12 @@
    "id": "il:anne_yasi:yuksek",
    "durum": "yayin",
    "video": "6rMbByVroQE"
+  },
+  {
+   "t": "2026-11-22",
+   "id": "il:oranartis_motosiklet:yuksek",
+   "durum": "yayin",
+   "video": "GIPlZ6bHv40"
   }
  ]
 }
