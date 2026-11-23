@@ -206,17 +206,12 @@
   "il:oranartis_motosiklet:yuksek",
   "il:artis_hemsire_10bin:yuksek",
   "il:artis_yasli_bagimlilik:yuksek",
-  "il:memleket_corum:yuksek"
+  "il:memleket_corum:yuksek",
+  "il:nereli_igdir:yuksek"
  ],
  "hatali": {},
  "tur": 0,
  "log": [
-  {
-   "t": "2026-09-17",
-   "id": "il:ortanca_yas:yuksek",
-   "durum": "yayin",
-   "video": "21mJjPgtao0"
-  },
   {
    "t": "2026-09-18",
    "id": "il:memleket_ankara:yuksek",
@@ -1409,6 +1404,12 @@
    "id": "il:memleket_corum:yuksek",
    "durum": "yayin",
    "video": "wu4_ZeqTDoc"
+  },
+  {
+   "t": "2026-11-23",
+   "id": "il:nereli_igdir:yuksek",
+   "durum": "yayin",
+   "video": "fX1CcBobrPw"
   }
  ]
 }
