@@ -207,17 +207,12 @@
   "il:artis_hemsire_10bin:yuksek",
   "il:artis_yasli_bagimlilik:yuksek",
   "il:memleket_corum:yuksek",
-  "il:nereli_igdir:yuksek"
+  "il:nereli_igdir:yuksek",
+  "il:artis_ilk_evlenme_erkek:yuksek"
  ],
  "hatali": {},
  "tur": 0,
  "log": [
-  {
-   "t": "2026-09-18",
-   "id": "il:memleket_ankara:yuksek",
-   "durum": "yayin",
-   "video": "sBehCGxuIHw"
-  },
   {
    "t": "2026-09-18",
    "id": "il:gsyh_kisi_basi:dusuk",
@@ -1410,6 +1405,12 @@
    "id": "il:nereli_igdir:yuksek",
    "durum": "yayin",
    "video": "fX1CcBobrPw"
+  },
+  {
+   "t": "2026-11-24",
+   "id": "il:artis_ilk_evlenme_erkek:yuksek",
+   "durum": "yayin",
+   "video": "50Jvl3jkcN4"
   }
  ]
 }
