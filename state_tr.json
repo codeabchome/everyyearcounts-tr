@@ -210,17 +210,12 @@
   "il:nereli_igdir:yuksek",
   "il:artis_ilk_evlenme_erkek:yuksek",
   "il:artis_traktor:yuksek",
-  "il:memleket_agri:yuksek"
+  "il:memleket_agri:yuksek",
+  "il:nereli_zonguldak:yuksek"
  ],
  "hatali": {},
  "tur": 0,
  "log": [
-  {
-   "t": "2026-09-19",
-   "id": "il:bosanma_hizi:yuksek",
-   "durum": "yayin",
-   "video": "TGBv7C0tuZc"
-  },
   {
    "t": "2026-09-19",
    "id": "il:goc_egitim:yuksek",
@@ -1413,6 +1408,12 @@
    "id": "il:memleket_agri:yuksek",
    "durum": "yayin",
    "video": "G0tTgGRGLKk"
+  },
+  {
+   "t": "2026-11-24",
+   "id": "il:nereli_zonguldak:yuksek",
+   "durum": "yayin",
+   "video": "28CFNHNvx8I"
   }
  ]
 }
