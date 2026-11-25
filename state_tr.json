@@ -212,17 +212,12 @@
   "il:artis_traktor:yuksek",
   "il:memleket_agri:yuksek",
   "il:nereli_zonguldak:yuksek",
-  "il:artis_anne_yasi:yuksek"
+  "il:artis_anne_yasi:yuksek",
+  "il:memleket_giresun:yuksek"
  ],
  "hatali": {},
  "tur": 0,
  "log": [
-  {
-   "t": "2026-09-19",
-   "id": "il:trafik_kaza_10bin:yuksek",
-   "durum": "yayin",
-   "video": "NSlGH5Is9JE"
-  },
   {
    "t": "2026-09-20",
    "id": "il:bebek_olum:yuksek",
@@ -1415,6 +1410,12 @@
    "id": "il:artis_anne_yasi:yuksek",
    "durum": "yayin",
    "video": "nNmuXn9_M7s"
+  },
+  {
+   "t": "2026-11-25",
+   "id": "il:memleket_giresun:yuksek",
+   "durum": "yayin",
+   "video": "797ARaidj7Q"
   }
  ]
 }
