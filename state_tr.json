@@ -213,17 +213,12 @@
   "il:memleket_agri:yuksek",
   "il:nereli_zonguldak:yuksek",
   "il:artis_anne_yasi:yuksek",
-  "il:memleket_giresun:yuksek"
+  "il:memleket_giresun:yuksek",
+  "il:nereli_manisa:yuksek"
  ],
  "hatali": {},
  "tur": 0,
  "log": [
-  {
-   "t": "2026-09-20",
-   "id": "il:bebek_olum:yuksek",
-   "durum": "yayin",
-   "video": "bRBBW2hNkJU"
-  },
   {
    "t": "2026-09-20",
    "id": "il:nufus_yogunlugu:yuksek",
@@ -1416,6 +1411,12 @@
    "id": "il:memleket_giresun:yuksek",
    "durum": "yayin",
    "video": "797ARaidj7Q"
+  },
+  {
+   "t": "2026-11-25",
+   "id": "il:nereli_manisa:yuksek",
+   "durum": "yayin",
+   "video": "FWkl9MNkJ2g"
   }
  ]
 }
