@@ -215,17 +215,12 @@
   "il:artis_anne_yasi:yuksek",
   "il:memleket_giresun:yuksek",
   "il:nereli_manisa:yuksek",
-  "il:memleket_isparta:yuksek"
+  "il:memleket_isparta:yuksek",
+  "il:nereli_kirklareli:yuksek"
  ],
  "hatali": {},
  "tur": 0,
  "log": [
-  {
-   "t": "2026-09-20",
-   "id": "il:memleket_izmir:yuksek",
-   "durum": "yayin",
-   "video": "NXg4qmYX0Mk"
-  },
   {
    "t": "2026-09-21",
    "id": "il:gsyh:yuksek",
@@ -1418,6 +1413,12 @@
    "id": "il:memleket_isparta:yuksek",
    "durum": "yayin",
    "video": "6KzYzRPgsrw"
+  },
+  {
+   "t": "2026-11-26",
+   "id": "il:nereli_kirklareli:yuksek",
+   "durum": "yayin",
+   "video": "GZmw7BtMRy4"
   }
  ]
 }
