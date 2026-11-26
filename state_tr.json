@@ -216,17 +216,12 @@
   "il:memleket_giresun:yuksek",
   "il:nereli_manisa:yuksek",
   "il:memleket_isparta:yuksek",
-  "il:nereli_kirklareli:yuksek"
+  "il:nereli_kirklareli:yuksek",
+  "il:memleket_aksaray:yuksek"
  ],
  "hatali": {},
  "tur": 0,
  "log": [
-  {
-   "t": "2026-09-21",
-   "id": "il:gsyh:yuksek",
-   "durum": "yayin",
-   "video": "eDEb7K4WqK0"
-  },
   {
    "t": "2026-09-21",
    "id": "il:nereli_kars:yuksek",
@@ -1419,6 +1414,12 @@
    "id": "il:nereli_kirklareli:yuksek",
    "durum": "yayin",
    "video": "GZmw7BtMRy4"
+  },
+  {
+   "t": "2026-11-26",
+   "id": "il:memleket_aksaray:yuksek",
+   "durum": "yayin",
+   "video": "G6X1rpXWMYI"
   }
  ]
 }
